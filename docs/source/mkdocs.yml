@@ -1,0 +1,5 @@
+site_name: Findify
+pages:
+    - Home: index.md
+    - Search API:
+        - 'Get started': 'search-api/getstarted.md'
