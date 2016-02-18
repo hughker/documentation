@@ -13,7 +13,7 @@ This is a documentation for Findify tools which include:
 ### Support
 -------
 
-If you are having issues, please let us know at: yourfriends@findify.io
+If you are having issues, please let us know at: [yourfriends@findify.io][email]
 
 ### License
 -------
@@ -21,3 +21,4 @@ If you are having issues, please let us know at: yourfriends@findify.io
 The project is licensed under the GNU license.
 
 [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+[email]: <yourfriends@findify.io>

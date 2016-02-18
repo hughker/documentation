@@ -1,5 +1,5 @@
 site_name: Findify
-theme: mkdocs
+site_favicon: favicon.png
 pages:
     - Home: index.md
     - Search API:
