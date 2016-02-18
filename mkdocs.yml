@@ -1,4 +1,5 @@
 site_name: Findify
+theme: mkdocs
 pages:
     - Home: index.md
     - Search API:
