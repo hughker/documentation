@@ -3,3 +3,5 @@ pages:
     - Home: index.md
     - Search API:
         - 'Get started': 'search-api/getstarted.md'
+    - Merchant JS:
+        - 'Get started': 'merchant-js/getstarted.md'
