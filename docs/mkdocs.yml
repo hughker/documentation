@@ -1,0 +1,6 @@
+site_name: MkLorum
+pages:
+- Home: index.md
+- 'Search API':
+    - 'Getting started': search-api/index.md'
+theme: readthedocs
