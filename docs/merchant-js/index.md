@@ -7,6 +7,8 @@
 * [Search enabling tags](onboarding/searchEnablingTags.md)
 * [Adding javaScript](onboarding/addingJavaScript.md)
 
-
-### Merchant.js API
+### API
 * [Integration Overview](api/overview.md)
+
+### Recommendations
+* [Getting started](recommendations/gettingStarted.md)
