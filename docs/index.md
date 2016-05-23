@@ -1,34 +1,29 @@
 # Findify
 
-##Install us!
+Welcome to the Findify documentation!
 
-Install on our site! 
+You can follow the guides in this documentation to integrate with Findify. If you encounter any issue, don't hesitate to contact us.
 
-Check our integrations and choose whatever suits you best:
+## Here are the steps you need to take for the basic onboarding
 
-- [Shopify](/integrations/shopify.md)
-- [Magento](/integrations/magento.md)
+* [Product feed](onboarding/productFeed.md)
+* [Tracking tags](onboarding/trackingTags.md)
+* [Search page URL](onboarding/searchPageURL.md)
+* [Search enabling tags](onboarding/searchEnablingTags.md)
+* [Adding javaScript](onboarding/addingJavaScript.md)
 
-Didn't find your platform? You can use [Custom integration](/integrations/custom.md) and build your search as you go!
+## Merchant JS API Integration
+If you would like to make modifications to the HTML templates or add any javascript components you can use our Merchant JS API:
+* [Integration Overview](api/overview.md)
 
-Not sure about pricing? 
-
-Contact us as [yourfriends@findify.io][email] to get a quote!
+## Recommendations
+If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Notifications are in Beta).
+* [Getting started](recommendations/gettingStarted.md)
 
 ## Contribute
-----------
 
-- Source Code for this documentation: [https://github.com/findify/documentation][git-repo-url]
+- Source Code for this documentation: [https://github.com/findify/documentation]()
 
 ## Support
--------
 
-If you are having issues, please let us know at: [yourfriends@findify.io][email]
-
-## License
--------
-
-The project is licensed under the GNU license.
-
-[git-repo-url]: <https://github.com/joemccann/dillinger.git>
-[email]: <yourfriends@findify.io>
+If you are having issues, please let us know at: [yourfriends@findify.io]()
