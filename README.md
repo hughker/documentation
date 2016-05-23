@@ -16,7 +16,7 @@ If you would like to make modifications to the HTML templates or add any javascr
 
 ## Recommendations
 If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
-* [Getting started](recommendations/gettingStarted.md)
+* [Recommendations - Getting started](recommendations/gettingStarted.md)
 
 ## Contribute
 
