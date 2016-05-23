@@ -12,7 +12,7 @@ Hey there! You can follow the guides in this documentation to integrate with Fin
 
 ## Merchant JS API Integration
 If you would like to make modifications to the HTML templates or add any javascript components you can use our Merchant JS API:
-* [Integration Overview](api/overview.md)
+* [Integration Overview](merchant-js-api/overview.md)
 
 ## Recommendations
 If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
