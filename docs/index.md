@@ -1,8 +1,6 @@
-# Findify
+# Findify developer documentation
 
-Welcome to the Findify documentation!
-
-You can follow the guides in this documentation to integrate with Findify. If you encounter any issue, don't hesitate to contact us.
+Hey there! You can follow the guides in this documentation to integrate with Findify. If you encounter any issue, don't hesitate to contact us.
 
 ## Here are the steps you need to take for the basic onboarding
 
@@ -17,7 +15,7 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Integration Overview](api/overview.md)
 
 ## Recommendations
-If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Notifications are in Beta).
+If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
 * [Getting started](recommendations/gettingStarted.md)
 
 ## Contribute
