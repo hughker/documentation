@@ -14,7 +14,7 @@ The product feed must be sent in CSV format. In order for the product feed to be
 |price            |Price of the product.|*15.99*|
 |image_url        |URL of the image of the product. For a best displaying quality, the image must have a size of 180px * 180px.|*http://www.example.co.uk/image1.jpg*|
 |product_url      |URL of the product’s page.|*http://www.example.com/asp/sp.asp?cat=12&id=1030*|
-|catgory          |Category of the product. The different subcategories are split using the > delimiter.|*Clothing & Accessories > Clothing > Dresses*|
+|category          |Category of the product. The different subcategories are split using the > delimiter.|*Clothing & Accessories > Clothing > Dresses*|
 |thumbnail_url    |URL of the thumbnail image of the product. The thumbnail image must have a size of 65px * 65px.|*http://www.example.co.uk/image1_thumb.jpg*|
 
 
