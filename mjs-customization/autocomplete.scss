@@ -1,0 +1,52 @@
+$columnWidth: '190px';
+
+.findify-mjs-autocomplete {
+  &.findify-mjs-autocomplete_layout-full {
+    width: $columnWidth*3;
+  }   
+
+  &.findify-mjs-autocomplete_layout-products-full {
+    width: $columnWidth*2;
+  }
+
+  &.findify-mjs-autocomplete_layout-products-half {
+    width: $columnWidth*2;
+  }
+
+  &.findify-mjs-autocomplete_layout-products-one {
+    width: $columnWidth;
+  }
+
+  &.findify-mjs-autocomplete_layout-suggestions {
+    width: $columnWidth;
+  }
+
+  &.findify-mjs-autocomplete_layout-suggestions-products-one {
+    width: $columnWidth*2;
+
+  &.findify-mjs-autocomplete__content.findify-mjs-autocomplete__content__column.findify-mjs-autocomplete__content__column_products {
+    width: $columnWidth;
+  }
+
+  &.findify-mjs-autocomplete_layout-suggestions-products-half {
+    width: $columnWidth*2;
+  }
+
+  &.findify-mjs-autocomplete_layout-suggestions-products-half.findify-mjs-autocomplete__content.findify-mjs-autocomplete__content__column.findify-mjs-autocomplete__content__column_products {
+    width: $columnWidth*2;
+  } 
+
+  &.findify-mjs-autocomplete_layout-right_layout-full {
+    position: relative;
+    left: -$columnWidth*2;
+  }
+
+  &.findify-mjs-autocomplete_layout-right_layout-two-thirds {
+    position: relative;
+    left: -$columnWidth*1.333;
+  }
+
+  &.findify-mjs-autocomplete_layout-right_layout-half {
+    position: relative;
+    left: -$columnWidth;
+  }
