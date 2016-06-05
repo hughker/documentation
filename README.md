@@ -19,7 +19,7 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Merchant JS API integration](merchant-js-api/overview.md)
 
 ### Merchant JS API examples
-* [Add custom CSS](merchant-js-api/examples/addCustomCSS.md)
+* [Add custom CSS](merchant-js-api/examples/addCustomCss.md)
 * [Add data from an external source](merchant-js-api/examples/addDataFromAnExternalSource.md)
 * [Add extra tracking](merchant-js-api/examples/addExtraTracking.md)
 * [Modify the autocomplete product results](merchant-js-api/examples/autocompleteProducts.md)
