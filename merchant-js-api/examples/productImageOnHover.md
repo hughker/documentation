@@ -1,0 +1,28 @@
+window.findifyApiRegistry = [
+    function (api) {
+        function switchImage(imageNode, image) {
+            return function () {
+                imageNode.src = image;
+            };
+        };
+
+        api.on(api.events.searchRenderedResults, function (apiData) {
+            var node = apiData.node,
+                image;
+
+            if (node) {
+                image = node.querySelector('img');
+                node.setAttribute('class', 'findify-mjs-search-results__main__content__product col-lg-4 col-sm-6 col-xs-6 col-xxs-12');
+
+                if (apiData.data.image_2_url) {
+                    var preload = new Image();
+                        preload.src = apiData.data.image_2_url,
+                        box = node.querySelector('.findify-mjs-search-results__main__content__product__box__image');
+
+                   box.onmouseover = switchImage(image, apiData.data.image_2_url);
+                   box.onmouseout = switchImage(image, apiData.data.image_url);
+                }
+            }
+        });
+    }
+];
