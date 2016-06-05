@@ -14,7 +14,6 @@ Hey there! You can follow the guides in this documentation to integrate with Fin
 If you would like to make advanced customizations, with a custom css file, you can follow these guides to get a grasp of the Merchant JS selector structure
 * [Merchant JS Autocomplete layout](merchant-js-customization/autocomplete.scss)
 
-
 ## Merchant JS API Integration
 If you would like to make modifications to the HTML templates or add any javascript components you can use our Merchant JS API:
 * [Merchant JS API integration](merchant-js-api/overview.md)
@@ -31,6 +30,10 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Change the labels of the 'sort by' dropdown](merchant-js-api/examples/sortByLabels.md)
 * [Use your store's JavaScript to manage the search results](merchant-js-api/examples/useYourStoresJS.md)
 
+## Merchant JS Use cases
+* [Clean layout](merchant-js-api/use-cases/cleanSearchResultsLayout.md)
+* [Custom look&feel using store's JavaScript](merchant-js-api/use-cases/customLookUsingStoreJS.md)
+* [Custom stickers on products](merchant-js-api/use-cases/customStickers.md)
 
 ## Recommendations
 If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
