@@ -42,14 +42,21 @@ searchRenderedBanner, ({node: DOM,data: banner});
 window.findifyApiRegistry = [ // should be an array of functions 
     function (api) { // each function gets an injected API object with the IApi interface
          // data retrival
-        api.on(api.events.searchGotData, function (apiData) { // this returns an IApiEvent object, the first parameter is of EApiEventsType
+        api.on(api.events.searchGotData, function (apiData, dispatch) { // this returns an IApiEvent object, the first parameter is of EApiEventsType
             console.log(apiData); // the complete search response data
 
+            // synchronous augumentation example
             apiData.products.forEach(function (product) {
                 product.title += ' yeah!'; // data augumentation before the views receive it
             });
+            
+            // asynchronous augumentation example
+            someAsyncFunction(function(extraProduct) {
+            	apiData.products.push(extraProduct);
+            	dispatch(apiData);
+            });
 
-            return apiData; // return data to views
+            return apiData; // return data to views (you can return null if you use dispatch(apiData);
         });
 
         // rendering
