@@ -33,7 +33,7 @@ If you would like to make modifications to the HTML templates or add any javascr
 ## Merchant JS Use cases
 * [Clean search results layout](merchant-js-api/use-cases/cleanSearchResultsLayout.md)
 * [Custom look using store's JavaScript](merchant-js-api/use-cases/customLookUsingStoreJS.md)
-* [Custom stickers on products](merchant-js-api/use-cases/customStickers.md)
+* [Custom stickers](merchant-js-api/use-cases/customStickers.md)
 
 ## Recommendations
 If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
