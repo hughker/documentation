@@ -1,3 +1,4 @@
+```javascript
 window.findifyApiRegistry = [
     function (api) {
         function switchImage(imageNode, image) {
@@ -26,3 +27,4 @@ window.findifyApiRegistry = [
         });
     }
 ];
+```
