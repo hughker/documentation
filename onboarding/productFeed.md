@@ -37,7 +37,7 @@ The product feed must be sent in CSV format. In order for the product feed to be
 
 ## Custom fields
 
-Custom fields that are not part of the model above, can be specified. Custom fields can contain a large panel of information. They can be specific to your products or to your business. Specifying a custom field make it automatically searchable (customers will be able to make queries to match the inner content of the custom field). It is possible to configure the custom field as a filter in the Merchant Dashboard.
+Custom fields that are not part of the model above, can be specified in the feed. Custom fields can contain a large panel of information, specific to your products or to your business. Defining a custom field make it automatically searchable: customers will be able to make queries to match their inner content. Custom fields can also be configured as filters in the Findify Merchant Dashboard.
 
 At the moment, only the custom fields that have a type **String** or **Double** are accepted. 
 
@@ -51,9 +51,9 @@ Here is an example with two custom fields (in bold) for the following product:
 
 ## Variants
 
-Your feed can contain variants. Our feed-pulling system can group them if you wish so. By specifying the optional field “item_group_id” that is common to the variants you want to group, the feed-pulling can group the variants of a same group into 1 product.
+Your feed can contain variants. Specifying the optional field “item_group_id” and filling it with a common value for the variants you want to group will let us group these variants into 1 product.
 
-If your model doesn’t permit it, it is also possible for us to group the variants according to the product URL or another field of the mandatory fields. Let us know if you want to change the field for the variants.
+If your model does not permit it, grouping the variants according to the product URL or another field from the set of mandatory fields is also possible. Let us know if you want to make this happen.
 
 ## Product feed example in CSV
 
@@ -69,8 +69,8 @@ Here is an example with the header that contains all the fields and 1 product (s
 
 >tddy123uk,"Men's Pique Polo Shirt","Solid red, king-sized bed sheets made from 100% woven polyester 300-thread count fabric. Set includes one fitted sheet, one flat sheet and two standard pillowcases. Machine washable; extra-deep fitted pockets.",15.99,http://www.example.co.uk/image1.jpg,http://www.example.com/asp/sp.asp?cat=12&id=1030,Clothing & Accessories > Clothing > Dresses,http://www.example.co.uk/image1_thumb.jpg,in stock,Calvin Klein,13.65,cotton,red,34,98,89A,3.5,1977-04-22T06:00:00Z
 
-## Hide some products
+## Remove some products from appearing in the search
 
-This is possible to hide some products from the search. It can be useful when the feed is automatically generated. In order to hide some products, you need to add another field named “tags” and give it the value **“findify-hide”**. 
+This is possible to remove some products from the search. This can be useful when the feed is automatically generated. In order to remove some products, you need to add another field named “tags” and give it the value **findify-remove**. 
 
-In case you have already tags in your feed, separate the value “findify-hide” from the other values with a comma: “findify-hide, tag1, tag2”.
+In case you have already tags in your feed, separate the value “findify-remove" from the other values with a comma: “findify-remove, tag1, tag2”.
