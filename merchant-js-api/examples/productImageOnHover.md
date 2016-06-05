@@ -1,3 +1,7 @@
+#Change product image on hover
+
+This examples shows how you can show a different product image when hovering over the product in the search results page.
+
 ```javascript
 window.findifyApiRegistry = [
     function (api) {
