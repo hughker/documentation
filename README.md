@@ -19,6 +19,19 @@ If you would like to make advanced customizations, with a custom css file, you c
 If you would like to make modifications to the HTML templates or add any javascript components you can use our Merchant JS API:
 * [Merchant JS API integration](merchant-js-api/overview.md)
 
+### Merchant JS API examples
+* [Add custom CSS](merchant-js-api/examples/addCustomCSS.md)
+* [Add data from an external source](merchant-js-api/examples/addDataFromAnExternalSource.md)
+* [Add extra tracking](merchant-js-api/examples/addExtraTracking.md)
+* [Modify the autocomplete product results](merchant-js-api/examples/autocompleteProducts.md)
+* [Modify the autocomplete synonym suggestions results](merchant-js-api/examples/autocompleteSuggestions.md)
+* [Add variant information to each product](merchant-js-api/examples/searchResultsProductVariants.md)
+* [Change the behaviour of the search results responsive layout](merchant-js-api/examples/searchResultsResponsiveLayout.md)
+* [Add an 'add to cart' button to each product](merchant-js-api/examples/searchResultsProductAddToCart.md)
+* [Change the labels of the 'sort by' dropdown](merchant-js-api/examples/sortByLabels.md)
+* [Use your store's JavaScript to manage the search results](merchant-js-api/examples/useYourStoresJS.md)
+
+
 ## Recommendations
 If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
 * [Recommendations - Getting started](recommendations/gettingStarted.md)
