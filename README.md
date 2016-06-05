@@ -31,8 +31,8 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Use your store's JavaScript to manage the search results](merchant-js-api/examples/useYourStoresJS.md)
 
 ## Merchant JS Use cases
-* [Clean layout](merchant-js-api/use-cases/cleanSearchResultsLayout.md)
-* [Custom look&feel using store's JavaScript](merchant-js-api/use-cases/customLookUsingStoreJS.md)
+* [Clean search results layout](merchant-js-api/use-cases/cleanSearchResultsLayout.md)
+* [Custom look using store's JavaScript](merchant-js-api/use-cases/customLookUsingStoreJS.md)
 * [Custom stickers on products](merchant-js-api/use-cases/customStickers.md)
 
 ## Recommendations
