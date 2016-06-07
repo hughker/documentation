@@ -22,8 +22,9 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Add custom CSS](merchant-js-api/examples/addCustomCss.md)
 * [Add data from an external source](merchant-js-api/examples/addDataFromAnExternalSource.md)
 * [Add extra tracking](merchant-js-api/examples/addExtraTracking.md)
-* [Change the behaviour of the search results responsive layout](merchant-js-api/examples/searchResultsResponsiveLayout.md)
+* [Change product image on hover](merchant-js-api/examples/productImageOnHover.md)
 * [Add an 'add to cart' button to each product](merchant-js-api/examples/searchResultsProductAddToCart.md)
+* [Change the behaviour of the search results responsive layout](merchant-js-api/examples/searchResultsResponsiveLayout.md)
 * [Change the labels of the 'sort by' dropdown](merchant-js-api/examples/sortByLabels.md)
 
 ## Merchant JS Use cases
