@@ -2,6 +2,8 @@
 
 This examples shows how you can show a different product image when hovering over the product in the search results page.
 
+![Change product image on hover](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-api/examples/images/productImageOnHover.png)
+
 ```javascript
 window.findifyApiRegistry = [
     function (api) {
