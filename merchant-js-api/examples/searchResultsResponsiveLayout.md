@@ -12,9 +12,8 @@ window.findifyApiRegistry = [
         };
 
         api.on(api.events.searchRenderedResults, function (apiData) {
-            var node = apiData.node,
-                image;
-
+            var node = apiData.node;
+            
             if (node) {
                 node.setAttribute('class', 'findify-mjs-search-results__main__content__product col-lg-4 col-sm-6 col-xs-6 col-xxs-12');
             }
