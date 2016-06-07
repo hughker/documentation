@@ -7,11 +7,14 @@ This document explains how to use the Merchant.JS core search url bindings to na
 1. Load your store and search for the query which you want to navigate to.
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_1.png)
 
+
 2. While on the search results page checkout the url in your browser address bar.
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_2.png)
 
+
 3. Select the whole link and copy it
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_3.png)
+
 
 4. Used the copied link addres as a target url for you navigation button, for example: 
 ```
@@ -22,12 +25,20 @@ This document explains how to use the Merchant.JS core search url bindings to na
 
 1. Load your store and search for the query which you want to navigate to.
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_1.png)
+
+
 2. Apply some filters using the filter panel on the left
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_4.png)
+
+
 2. Checkout the url in your browser address bar.
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_2.png)
+
+
 3. Select the whole link and copy it
 ![](https://raw.githubusercontent.com/findify/documentation/master/merchant-js-core/images/manual_navigation_3.png)
+
+
 4. Used the copied link addres as a target url for you navigation button, for example: 
 
 ```
