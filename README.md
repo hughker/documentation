@@ -10,13 +10,8 @@ Hey there! You can follow the guides in this documentation to integrate with Fin
 * [Search enabling tags](onboarding/searchEnablingTags.md)
 * [Adding javaScript](onboarding/addingJavaScript.md)
 
-## Merchant JS: Bulding a custom navigation
-Follow this guide if you'd like to create a simple navigation that redirects users to particular search results.
-* [Merchant JS Custom navigation](merchant-js-core/manualNavigation.md)
-
-
-## Merchant JS: Customization
-If you would like to make advanced customizations, with a custom css file, you can follow these guides to get a grasp of the Merchant JS selector structure
+## Merchant JS: Look & Feel Customization
+If you would like to make advanced customizations to the look & feel of the search results you can do so with a custom css file. Please follow these guides to get a grasp of the Merchant JS selector structure
 * [Merchant JS Autocomplete layout](merchant-js-customization/autocomplete.scss)
 
 ## Merchant JS: API Integration
@@ -40,6 +35,10 @@ If you would like to make modifications to the HTML templates or add any javascr
 ## Recommendations
 If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
 * [Recommendations - Getting started](recommendations/gettingStarted.md)
+
+## Merchant JS: Bulding a custom navigation
+Follow this guide if you'd like to create a simple navigation that redirects users to particular search results.
+* [Merchant JS Custom navigation](merchant-js-core/manualNavigation.md)
 
 ## Contribute
 
