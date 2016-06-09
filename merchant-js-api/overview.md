@@ -106,6 +106,7 @@ interface IApi {
 When using a completely custom DOM layout for the search results it's important to add proper tracking tags to the DOM, so that our machine learning alghoritms can work properly.
 
 Each link to a product page and each add to cart button action should have the following tags:
+
 1. data-findify-type="search-product"
 2. data-findify-id="{product.id}"
 
