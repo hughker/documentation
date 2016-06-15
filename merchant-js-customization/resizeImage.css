@@ -1,4 +1,3 @@
-```css
 .findify-mjs-search-results .findify-mjs-search-results__main .findify-mjs-search-results__main__content .findify-mjs-search-results__main__content__product .findify-mjs-search-results__main__content__product__box .findify-mjs-search-results__main__content__product__box__image {
     min-height: 200px;
     max-height: 200px;
@@ -7,4 +6,3 @@
 .findify-mjs-search-results .findify-mjs-search-results__main .findify-mjs-search-results__main__content .findify-mjs-search-results__main__content__product .findify-mjs-search-results__main__content__product__box .findify-mjs-search-results__main__content__product__box__image>img { 
     max-height: 200px;
 }
-```
