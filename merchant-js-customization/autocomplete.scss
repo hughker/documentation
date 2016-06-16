@@ -1,4 +1,4 @@
-$columnWidth: '190px';
+$columnWidth: 190px;
 
 .findify-mjs-autocomplete {
   &.findify-mjs-autocomplete_layout-full {
@@ -50,3 +50,4 @@ $columnWidth: '190px';
     position: relative;
     left: -$columnWidth;
   }
+}
