@@ -10,7 +10,7 @@ window.findifyApiRegistry = [
              // you should change the below selector to the actual close trigger of the search overlay
              var hideSearchOverlay = document.querySelector('.search-close');
 
-             if (hideSearchOverlay) {
+             if (hideSearchOverlay && hideSearchOverlay.getBoundingClientRect().bottom!==0) {
                hideSearchOverlay.click();
              }
           },0); // make sure we close the overlay in the next browser tick, so it doesn't re-render 
