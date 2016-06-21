@@ -5,12 +5,6 @@ This examples shows how you can manage the search results product layout to suit
 ```javascript
 window.findifyApiRegistry = [
     function (api) {
-        function switchImage(imageNode, image) {
-            return function () {
-                imageNode.src = image;
-            };
-        };
-
         api.on(api.events.searchRenderedResults, function (apiData) {
             var node = apiData.node;
             

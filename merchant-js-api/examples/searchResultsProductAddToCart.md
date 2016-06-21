@@ -10,12 +10,6 @@ function addToCart(productId) {
 
 window.findifyApiRegistry = [
     function (api) {
-        function switchImage(imageNode, image) {
-            return function () {
-                imageNode.src = image;
-            };
-        };
-
         api.on(api.events.searchRenderedResults, function (apiData) {
             var node = apiData.node;
             
