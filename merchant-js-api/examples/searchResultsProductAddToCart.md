@@ -18,7 +18,7 @@ window.findifyApiRegistry = [
             if (node) {
                 buttonNode = node.querySelector('[data-add-to-cart="' + apiData.data.id + '"]');
                 
-                if (buttonNode) {
+                if (!buttonNode) {
                     button = document.createElement('button');
                     
                     button.setAttribute('data-add-to-cart',apiData.data.id);
