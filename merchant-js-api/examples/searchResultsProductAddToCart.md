@@ -11,16 +11,24 @@ function addToCart(productId) {
 window.findifyApiRegistry = [
     function (api) {
         api.on(api.events.searchRenderedResults, function (apiData) {
-            var node = apiData.node;
+            var node = apiData.node,
+                buttonNode,
+                button;
             
             if (node) {
-                var button = document.createElement('button');
+                buttonNode = node.querySelector('[data-add-to-cart="' + apiData.data.id + '"]');
                 
-                button.addEventListener('click', function() {
-                    addToCart(apiData.data.id);
-                });
-                
-                node.appendChild(button);
+                if (buttonNode) {
+                    button = document.createElement('button');
+                    
+                    button.setAttribute('data-add-to-cart',apiData.data.id);
+                    
+                    button.addEventListener('click', function() {
+                        addToCart(apiData.data.id);
+                    });
+                    
+                    node.appendChild(button);
+                }
             }
         });
     }
