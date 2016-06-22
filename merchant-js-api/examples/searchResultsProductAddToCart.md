@@ -22,7 +22,9 @@ window.findifyApiRegistry = [
                     button = document.createElement('button');
                     
                     button.setAttribute('data-add-to-cart',apiData.data.id);
-                    
+                    button.setAttribute('data-findify-type','search-product');
+                    button.setAttribute('data-findify-id', apiData.data.id);
+
                     button.addEventListener('click', function() {
                         addToCart(apiData.data.id);
                     });
