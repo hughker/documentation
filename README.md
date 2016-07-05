@@ -34,8 +34,8 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Custom stickers](merchant-js-api/use-cases/customStickers.md)
 
 ## Recommendations
-If you want to integrated Findify Recommendations you can find the instructions below (please note Findify Recommendations are in Beta).
-* [Recommendations - Getting started](recommendations/gettingStarted.md)
+If you want to integrat Findify Recommendations - visit your merchant dashboard!
+* [Recommendations](https://dashboard.findify.io/#/dashboard/recommendations)
 
 ## Merchant JS: Bulding a custom navigation
 Follow this guide if you'd like to create a simple navigation that redirects users to particular search results.
