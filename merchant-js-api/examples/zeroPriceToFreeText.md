@@ -1,3 +1,8 @@
+#Custom text for 0.00 prices
+
+This examples shows how you can create a custom text label for products with a 0.00 price.
+
+```javascript
 window.findifyApiRegistry = [
     function (api) {
         function priceConverter(apiData) {
@@ -14,3 +19,4 @@ window.findifyApiRegistry = [
         api.on(api.events.autocompleteRenderedProducts, priceConverter);
     }
 ];    
+```
