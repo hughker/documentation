@@ -41,6 +41,10 @@ If you want to integrat Findify Recommendations - visit your merchant dashboard!
 Follow this guide if you'd like to create a simple navigation that redirects users to particular search results.
 * [Merchant JS Custom navigation](merchant-js-core/manualNavigation.md)
 
+## Search API
+You can use following advanced features by querying our API directly
+* [Demand messaging](search-api/features/demand-messaging.md)
+
 ## Contribute
 
 - Source Code for this documentation: [https://github.com/findify/documentation]()
