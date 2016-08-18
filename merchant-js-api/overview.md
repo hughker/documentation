@@ -87,9 +87,16 @@ enum EApiEvents {
     searchGotData,
     searchRenderedHeader,
     searchRenderedFacets,
+    searchRenderedFacet,
     searchRenderedResults,
     searchRenderedFooter,
-    searchRenderedBanner
+    searchRenderedBanner,
+
+    //lifecycle
+    gotConfiguration,
+
+    //query
+    getData
 }
 
 // api event interface
