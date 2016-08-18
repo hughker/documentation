@@ -22,12 +22,12 @@ function myapiIntegration(api) {
 
 ```javascript
 //autocomplete    
-autocompleteGotData, (autocompleteSearchApiResponse);    
+autocompleteGotData, (autocompleteSearchApiResponse,updater);    
 autocompleteRenderedSuggestions, ({node: DOM,data: suggestions});    
 autocompleteRenderedProducts, ({node: DOM,data: products});   
 
 //search    
-searchGotData, (searchSearchApiResponse);   
+searchGotData, (searchSearchApiResponse,updater);   
 searchRenderedHeader, ({node: DOM,data: metaInformation, emitter: queryDispatcher});  
 searchRenderedFacets, ({node: DOM,data: facets, emitter: queryDispatcher});  
 searchRenderedFacet, ({node: DOM, data: facets, emitter: queryDispatcher});
@@ -128,3 +128,19 @@ For example:
 ```html
 <a href="http://yourStore.com/product-link" data-findify-type="search-product" data-findify-id="5280418631">Go to product</a>
 ```
+
+## MerchantJS API Lifecycle
+
+When using the merchantJS API it's good to know the lifecycle that the views and data go through.
+
+1. When initialising the merchantJS the *gotConfiguration* event is fired before passing the configuration to the components, which means you can do some live tweaking of the configuration and affect how the search works and looks for your customers - this may include personalisation or adding extra content.
+
+2. When the UI components are initialised they start in an empty state, after that the merchantJS requests data from the server which is resolved and passed on to the components. To affect how the data query looks you can use the *getData* event. This gives you the data query *before* it's handed over to the backend for processing.
+
+3. After the backend processes the data query it returns adequate results to the merchantJS. You can use *searchGotData* and *autocompleteGotData* events to decorate the results to add extra features, for example you could have a realtime-api for the prices and update them accordingly. At this stage no component is udpated so anything you add to the data will be later handed over to the components. These events *must return the data object* or *must use the emmiter* to update the data model for the components to render.
+
+4. Once the data is processed and returned the rendering lifecycle phase starts, in this phase you have access to the following DOM elements and their data models - all the events that have "Rendered" in their name can be used to change different aspects of the search results components. Additionally the searchRenderedFacets,searchRenderedFacet and searchRenderedHeader events have an extra *emitter* propery, which can be used to create calls to the searchApi (which drives the whole cycle back to point 2)
+
+This cycle is run every time a change to the query is made from the UI (like selecting facets, changing the results page, changing the order, etc.)
+
+
