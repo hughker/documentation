@@ -28,11 +28,18 @@ autocompleteRenderedProducts, ({node: DOM,data: products});
 
 //search    
 searchGotData, (searchSearchApiResponse);   
-searchRenderedHeader, ({node: DOM,data: metaInformation});  
-searchRenderedFacets, ({node: DOM,data: filters});  
+searchRenderedHeader, ({node: DOM,data: metaInformation, emitter: queryDispatcher});  
+searchRenderedFacets, ({node: DOM,data: facets, emitter: queryDispatcher});  
+searchRenderedFacet, ({node: DOM, data: facets, emitter: queryDispatcher});
 searchRenderedResults, ({node: DOM,data: products});  
 searchRenderedFooter, ({node: DOM,data: metaInformation});  
 searchRenderedBanner, ({node: DOM,data: banner});  
+
+//lifecycle
+gotConfiguration, (searchConfiguration);
+
+// query
+getData, (query);
 ```
 
 
