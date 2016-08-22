@@ -2,6 +2,11 @@
 
 Hey there! You can follow the guides in this documentation to integrate with Findify. If you encounter any issue, don't hesitate to contact us.
 
+## Onboarding
+
+* [Shopify Custom Installation](onboarding/steps/shopify.md)
+* [BigCommerce](onboarding/steps/bigcommerce.md)
+
 ## Here are the steps you need to take for the basic onboarding
 
 * [Product feed](onboarding/productFeed.md)
