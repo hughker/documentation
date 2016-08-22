@@ -1,58 +1,58 @@
-### Welcome
-![Welcome](./bigcommerce/0.png)
+# BigCommerce
 
-### Disable quick search
-![Welcome](./bigcommerce/1.png)
+To integrate Findify into your shop you need to do all of the steps listed below:
 
-#### Links
+* Disable quick search
+* Add tracking tags
+* Add Findify to your search results page
+* Add script to `<head>` section
 
-* Store settings: __[store_url]/manage/settings/store__
+__Important note__: If you're using __Stencil__ you might need extra integration work, so please, feel free to contact us!
 
-### Tax information
-![Welcome](./bigcommerce/2.png)
+## Disable quick search
 
-### Add tracking tags
-![Welcome](./bigcommerce/3.png)
+1. Go to you store settings __([store_url]/manage/settings/store)__
+2. Choose the __display__ tab
+3. Scroll down until you fine _Enable Quick Search?_ section and __uncheck__ the box
 
-#### Links
+## Add tracking tags
 
-* Product page: __[store_url]/admin/designmode.php?ToDo=editFile&File=product.html&f=a__
-* Order page: __[store_url]/admin/designmode.php?ToDo=editFile&File=order.html&f=a__
+Adding the tag to __`product.html`__ page
 
-#### Code snippets
+1. Go to the __`product.html`__ page __([store_url]/admin/designmode.php?ToDo=editFile&File=product.html&f=a)__
+2. Paste the code snippet before __`</body>`__ tag
 
-* Product page
 ```html
 <div class="findify_page_product" style="display:none">%%GLOBAL_ProductId%%</div>
 ```
 
-* Order page
+Adding the tag tp __`order.html`__ page
+
+1. Go to the __`order.html`__ page __([store_url]/admin/designmode.php?ToDo=editFile&File=order.html&f=a)__
+2. Paste the code snippet before the __`</body>`__ tag
+
 ```html
 <div class="findify_purchase_order" style="display:none">
    <span class="order_number">%%GLOBAL_OrderId%%</span>
 </div>
 ```
 
-
 ### Add Findify to your search page
-![Welcome](./bigcommerce/4.png)
 
-#### Links
+_This is the trickiest part as it may very for different shops._ 
 
-* Search results page: __[store_url]/admin/designmode.php?ToDo=editFile&File=search.html&f=a__
+You need to put the tag at the place where you want the search results to be displayed and you may need to create a new `<div>` wrapper around the default BigCommerce element that shows search results.
 
-#### Code snippets
-```html
-data-findify-attr="findify-search-results"
-```
+1. Go to the __`search.html`__ page __([store_url]/admin/designmode.php?ToDo=editFile&File=search.html&f=a)__
+2. Paste __`data-findify-attr="findify-search-results"`__ inside the __`<div>`__ tag  that wraps __`%%Panel.SearchPage%%`__
+3. If there is no wrapper __`<div>`__, you should create it yourself and tag it with the tag above
 
 ### Add JS Script to header
-![Welcome](./bigcommerce/5.png)
 
-#### Links
+Go to the [Findify Integration](https://dashboard.findify.io/#/dashboard/integration-details) section of the [Merchant Dashboard](https://dashboard.findify.io) and copy the script.
 
-* HTML head file: __[store_url]/admin/designmode.php?ToDo=editFile&File=search.html&f=a__
+1. Go to the __`Panels/HTMLHead.html`__ page __([store_url]/admin/designmode.php?ToDo=editFile&File=Panels/HTMLHead.html&f=a)__
+2. Paste the script copied from the Merchant Dashboard before the __`</head>`__ tag
 
-#### Code snippets
+__After following these steps the search should be live in your store!__
 
-Code snippet can be found in your [Merchant Dashboard](https://dashboard.findify.io/#/dashboard/integration-details)
