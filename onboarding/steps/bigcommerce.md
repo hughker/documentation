@@ -1,11 +1,11 @@
 # BigCommerce
 
-To integrate Findify into your shop you need to do all of the steps listed below:
+To integrate Findify into your shop you'll need to follow steps listed below:
 
 * Disable quick search
-* Add tracking tags
+* Add the Findify tracking tags
 * Add Findify to your search results page
-* Add script to `<head>` section
+* Add the Findify Javascript to `<head>` section
 
 __Important note__: If you're using __Stencil__ you might need extra integration work, so please, feel free to contact us!
 
@@ -15,7 +15,7 @@ __Important note__: If you're using __Stencil__ you might need extra integration
 2. Choose the __display__ tab
 3. Scroll down until you fine _Enable Quick Search?_ section and __uncheck__ the box
 
-## Add tracking tags
+## Add Findify tracking tracking tags
 
 Adding the tag to __`product.html`__ page
 
