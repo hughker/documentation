@@ -15,7 +15,7 @@ Create a new snippet under __`snippets/`__ that is called __`findify-tagging.liq
 {% if product %}<div class="findify_page_product" style="display:none">{{product.id}}</div>{% endif %}
 ```
 
-Reference this snippet in `layout.liquid` file of the theme by placing the snippet below before `</body>`
+Reference this snippet in __`layout.liquid`__ file of the theme by placing the snippet below before __`</body>`__
 
 ```html
 {% include 'findify-tagging' %}
