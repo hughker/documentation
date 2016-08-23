@@ -1,6 +1,6 @@
-#Add custom css
+#Build custom banner html
 
-This examples shows how you can inject custom css into the search results.
+This examples shows how you can inject custom html into/instead of your image banners.
 
 ```javascript
 window.findifyApiRegistry = [
