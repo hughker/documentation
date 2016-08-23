@@ -2,7 +2,7 @@
 
 To add a preloader replace your ```<div id="findify_results"></div>``` code block with the one below:
 
-```
+```html
 <style>
 .findify-component-spinner {
   margin: 60px auto 0 auto !important;
