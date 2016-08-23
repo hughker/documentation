@@ -18,6 +18,8 @@ Hey there! You can follow the guides in this documentation to integrate with Fin
 ## Merchant JS: Look & Feel Customization
 If you would like to make advanced customizations to the look & feel of the search results you can do so with a custom css file. Please follow these guides to get a grasp of the Merchant JS selector structure
 * [Merchant JS Autocomplete layout](merchant-js-customization/autocomplete.scss)
+* [Extra animated preloader](merchant-js-customization/preloader.md)
+* [Resize images](merchant-js-customization/resizeImage.md)
 
 ## Merchant JS: API Integration
 If you would like to make modifications to the HTML templates or add any javascript components you can use our Merchant JS API:
