@@ -1,6 +1,6 @@
 #Add a preloader before our merchantJS loads
 
-To add a preloader replace your ```html<div id="findify_results"></div>``` code block with the one below:
+To add a preloader replace your ```<div id="findify_results"></div>``` code block with the one below:
 
 ```html
 <style>
