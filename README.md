@@ -28,7 +28,6 @@ If you would like to make modifications to the HTML templates or add any javascr
 * [Add data from an external source](merchant-js-api/examples/addDataFromAnExternalSource.md)
 * [Add extra tracking](merchant-js-api/examples/addExtraTracking.md)
 * [Custom banner HTML](merchant-js-api/examples/customBannerHtml.md)
-
 * [Close search overlay](merchant-js-api/examples/closeSearchOverlay.md)
 * [Change product image on hover](merchant-js-api/examples/productImageOnHover.md)
 * [Add an 'add to cart' button to each product](merchant-js-api/examples/searchResultsProductAddToCart.md)
