@@ -1,12 +1,12 @@
 # Findify Shopify Integration
 
 There are 2 ways to integrate Findify into your Shopify store: 
-- Using our fully automatic [Shopify App](https://apps.shopify.com/findify-search)
+- Using our fully automatic <a href="https://apps.shopify.com/findify-search" target="_blank">Shopify App</a>
 - Using a private Shopify app and providing us with API key and password for it
 
 ## Public app integration
 
-- Go to our app [Findify Seach & Recommendation](https://apps.shopify.com/findify-search) in the Shopify App Store
+- Go to our app <a href="https://apps.shopify.com/findify-search" target="_blank">Findify Seach & Recommendation</a> in the Shopify App Store
 - Install the app
 
 Proceed to our [Merchant Dashboard](https://dashboard.findify.io) either by logging in directly or from your Shopify Admin Panel and start customizing!
