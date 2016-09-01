@@ -1,13 +1,20 @@
-# BigCommerce
+# Findify BigCommerce Integration
+
+_At the moment we only support Public App Integration. If you want to integrate with us via a Private App, please contact us directly at yourfriends@findify.io_
 
 To integrate Findify into your shop you'll need to follow steps listed below:
 
+* Install [Findify Search & Recommendations](https://www.bigcommerce.com/apps/findify-search-recommendations)
 * Disable quick search
 * Add the Findify tracking tags
 * Add Findify to your search results page
 * Add the Findify Javascript to `<head>` section
 
 __Important note__: If you're using __Stencil__ you might need extra integration work, so please, feel free to contact us!
+
+## Install Findify Search & Recommendations app
+
+Go to our app [Findify Search & Recommendations](https://www.bigcommerce.com/apps/findify-search-recommendations) and add it to your store.
 
 ## Disable quick search
 

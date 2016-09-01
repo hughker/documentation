@@ -7,7 +7,7 @@ A unified documentation of our solution. If you have any questions or problems w
 We have developed apps for [Shopify](https://apps.shopify.com/findify-search), [BigCommerce](https://www.bigcommerce.com/apps/findify-search-recommendations) and [Magento](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html) that will help you integrate with Findify easili and quickly. If you are not on any of these platforms, don't worry as you can do a custom integration with us!
 
 - [Shopify](onboarding/shopify/README.md)
-- [BigCommerce]
+- [BigCommerce](onboarding/bigcommerce/README.md)
 - [Magento]
 - [Custom]
 
@@ -15,8 +15,8 @@ We have developed apps for [Shopify](https://apps.shopify.com/findify-search), [
 
 After installing one of our apps or preparing a custom integration additional steps might be required on your side:
 
-- [Shopify Private App]
-- ]BigCommerce]
+- [Shopify Private App](onboarding/shopify/integration.md)
+- [BigCommerce](onboarding/bigcommerce/README.md)
 - [Magento]
 - [Custom]
 
