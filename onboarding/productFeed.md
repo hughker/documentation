@@ -22,6 +22,7 @@ The product feed must be sent in CSV format. In order for the product feed to be
 
 |Name of the field|Description|Example
 |-----------------|-----------|------|
+|sku              |SKU of the product. Even if the "id" of the product is the SKU, you need to add a dedicated "sku" field.|*126373-AOP*|
 |availability     |Availability status of the product (‘in stock” or “out of stock”).|*in stock*|
 |brand            |Brand of the product.|*Calvin Klein*|
 |seller           |Seller of the product.|*Calvin Shop*|
@@ -65,9 +66,9 @@ Each product is then written as a line in the CSV file, the fields' content also
 
 Here is an example with the header that contains all the fields and 1 product (second line).
 
->id,title,description,price,image_url,product_url,category,thumbnail_url,availability,brand,sale_price,material,color,size,quantity,item_group_id,rating_score,created_at
+>id,sku,title,description,price,image_url,product_url,category,thumbnail_url,availability,brand,sale_price,material,color,size,quantity,item_group_id,rating_score,created_at
 
->tddy123uk,"Men's Pique Polo Shirt","Solid red, king-sized bed sheets made from 100% woven polyester 300-thread count fabric. Set includes one fitted sheet, one flat sheet and two standard pillowcases. Machine washable; extra-deep fitted pockets.",15.99,http://www.example.co.uk/image1.jpg,http://www.example.com/asp/sp.asp?cat=12&id=1030,Clothing & Accessories > Clothing > Dresses,http://www.example.co.uk/image1_thumb.jpg,in stock,Calvin Klein,13.65,cotton,red,34,98,89A,3.5,1977-04-22T06:00:00Z
+>tddy123uk,126373-AOP,"Men's Pique Polo Shirt","Solid red, king-sized bed sheets made from 100% woven polyester 300-thread count fabric. Set includes one fitted sheet, one flat sheet and two standard pillowcases. Machine washable; extra-deep fitted pockets.",15.99,http://www.example.co.uk/image1.jpg,http://www.example.com/asp/sp.asp?cat=12&id=1030,Clothing & Accessories > Clothing > Dresses,http://www.example.co.uk/image1_thumb.jpg,in stock,Calvin Klein,13.65,cotton,red,34,98,89A,3.5,1977-04-22T06:00:00Z
 
 ## Remove some products from appearing in the search
 
