@@ -9,7 +9,7 @@ We have developed apps for [Shopify](https://apps.shopify.com/findify-search), [
 - [Shopify](onboarding/shopify/README.md)
 - [BigCommerce](onboarding/bigcommerce/README.md)
 - [Magento]
-- [Custom]
+- [Custom](onboarding/custom/README.md)
 
 ## Integration
 
@@ -18,7 +18,7 @@ After installing one of our apps or preparing a custom integration additional st
 - [Shopify Private App](onboarding/shopify/integration.md)
 - [BigCommerce](onboarding/bigcommerce/integration.md)
 - [Magento]
-- [Custom]
+- [Custom](onboarding/custom/integration.md)
 
 ## Customization
 

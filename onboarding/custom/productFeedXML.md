@@ -1,6 +1,8 @@
+# Findify XML Feed Format
+
 ## Introduction
 
-This document presents the product feed specification for the feeds to be sent to Findify.
+This document presents the product feed specification for the __XML__ feeds to be sent to Findify.
 
 The product feed must be sent in XML format. In order for the product feed to be synchronized periodically with Findify, the XML file must be accessible via HTTP or HTTPS. We are supporting files behind a basic authentication.
 
@@ -38,21 +40,21 @@ The product feed must be sent in XML format. In order for the product feed to be
 
 ## Custom fields
 
-Custom fields that are not part of the model above, can be specified in the feed. Custom fields can contain a large panel of information, specific to your products or to your business. Defining a custom field make it automatically searchable: customers will be able to make queries to match their inner content. Custom fields can also be configured as filters in the Findify Merchant Dashboard.
+Custom fields that are not part of the model above but can be specified in the feed. Custom fields can contain a large panel of information, specific to your products or to your business. Defining a custom field make it automatically searchable: customers will be able to make queries to match their inner content. Custom fields can also be configured as filters in the Findify Merchant Dashboard.
 
-Only the custom fields that have a type **String** or **Double** are accepted. 
+__At the moment, only custom fields that have a type of **String** or **Double** are accepted.__
 
-To include new custom fields, add a new element whose name is the custom field name in the product element.
+To include new custom fields, add a new element which name is the custom field name in the product element.
 
 ## Variants
 
-Your feed can contain variants. Specifying the optional field “item_group_id” and filling it with a common value for the variants you want to group will let us group these variants into 1 product.
+Your feed can contain variants. Specifying the optional field __*item_group_id*__ and filling it with a common value for the variants you want to group will let us group these variants into 1 product.
 
-If your model does not permit it, grouping the variants according to the product URL or another field from the set of mandatory fields is also possible. Let us know if you want to make this happen.
+If your model does not permit it, grouping the variants according to the product URL or another field from the set of mandatory fields is also possible. Let us know at yourfriends@findify.io if you want to make this happen.
 
 ## Product feed example in XML
 
-The following example contains all the mandatory fields, some of the optional fields and the custom_field "gender".
+The following example contains all the mandatory fields, some of the optional fields and the custom_field "*gender*".
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,6 +86,6 @@ The following example contains all the mandatory fields, some of the optional fi
 
 ## Remove some products from appearing in the search
 
-This is possible to remove some products from the search. This can be useful when the feed is automatically generated. In order to remove some products, you need to add another field named “tags” and give it the value **findify-remove**. 
+It is possible to remove some products from the search. This can be useful when the feed is automatically generated. In order to remove some products, you need to add another field named __“tags”__ and give it the value **findify-remove**. 
 
-In case you have already tags in your feed, separate the value “findify-remove" from the other values with a comma: “findify-remove, tag1, tag2”.
+In case you have already tags in your feed, separate the value __findify-remove__ from the other values with a comma: _“findify-remove, tag1, tag2”_.
