@@ -35,4 +35,4 @@ This is a __minimum required__ set of permissions:
 - Choose which permissions you want to give us (full or minimum)
 - Send the API key and Password generated in first step to yourfriends@findify.io
 
-### Next step: Follow [integration steps for minimum set of permissions](onboarding/shopify/integration.md)
+### Next step: Follow [integration steps for minimum set of permissions](integration.md)

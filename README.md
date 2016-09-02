@@ -16,7 +16,7 @@ We have developed apps for [Shopify](https://apps.shopify.com/findify-search), [
 After installing one of our apps or preparing a custom integration additional steps might be required on your side:
 
 - [Shopify Private App](onboarding/shopify/integration.md)
-- [BigCommerce](onboarding/bigcommerce/README.md)
+- [BigCommerce](onboarding/bigcommerce/integration.md)
 - [Magento]
 - [Custom]
 
