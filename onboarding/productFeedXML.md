@@ -22,6 +22,7 @@ The product feed must be sent in XML format. In order for the product feed to be
 
 |Name of the field|Description|Example
 |-----------------|-----------|------|
+|sku              |SKU of the product. Even if the "id" of the product is the SKU, you need to add a dedicated "sku" field.|*126373-AOP*|
 |availability     |Availability status of the product (‘in stock” or “out of stock”).|*in stock*|
 |brand            |Brand of the product.|*Calvin Klein*|
 |seller           |Seller of the product.|*Calvin Shop*|
@@ -58,6 +59,7 @@ The following example contains all the mandatory fields, some of the optional fi
 <products>
 	<product>
 		<id><![CDATA[tddy123uk]]></id>
+		<sku><![CDATA[126373-AOP]]></sku>
 		<title><![CDATA[Men's Pique Polo Shirt]]></title>
 		<description><![CDATA[Solid red, king-sized bed sheets made from 100% woven polyester 300-thread count fabric. Set includes one fitted sheet, one flat sheet and two standard pillowcases. Machine washable; extra-deep fitted pockets.]]></description>
 		<price><![CDATA[15.99]]></price>
