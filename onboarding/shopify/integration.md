@@ -2,7 +2,7 @@
 
 _If you have given the full set of permissions to the API key you have provided, you can skip this guide!_
 
-If you have chosen to give us the minimum set of permissions from the [previous step](onboarding/shopify/README.md) you will need to follow this guide to finish setting up Findify in your store. 
+If you have chosen to give us the minimum set of permissions from the [previous step](README.md) you will need to follow this guide to finish setting up Findify in your store. 
 
 * Tag product view
 * Create search results page

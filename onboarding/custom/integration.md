@@ -33,8 +33,8 @@ __We don't support multiple currencies for the same store at the moment, unless 
 
 At the moment we support these formats for the product feed:
 
-- [CSV](/productFeedCSV.md)
-- [XML](/productFeedXML.md)
+- [CSV](productFeedCSV.md)
+- [XML](productFeedXML.md)
 - JSON (_please contact us at yourfriends@findify.io directly_)
 
 The feed must be __publicly available__ so that our system can access it via HTTP or HTTPS. We also support Basic Authentication, but for that please contact us directly at yourfriends@findify.io.
