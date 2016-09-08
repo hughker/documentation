@@ -14,8 +14,6 @@ window.findifyApiRegistry = [
             apiData.innerHTML = '<p>Your custom HTML here</p>';
         }
       });
-      
-      api.addStyle('https://yourstore.com/custom-findify-style.css');
     }
 ];
 ```
