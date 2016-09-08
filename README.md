@@ -8,7 +8,7 @@ We have developed apps for [Shopify](https://apps.shopify.com/findify-search), [
 
 - [Shopify](onboarding/shopify/README.md)
 - [BigCommerce](onboarding/bigcommerce/README.md)
-- [Magento]
+- [Magento](onboarding/magento/README.md)
 - [Custom](onboarding/custom/README.md)
 
 ## Integration
@@ -17,46 +17,20 @@ After installing one of our apps or preparing a custom integration additional st
 
 - [Shopify Private App](onboarding/shopify/integration.md)
 - [BigCommerce](onboarding/bigcommerce/integration.md)
-- [Magento]
+- [Magento](onboarding/magento/Integration.md)
 - [Custom](onboarding/custom/integration.md)
 
-## Customization
+## Advanced usage
 
 Now that you are live, you can enhance experience of your buyers even more by directly using our APIs or enabling advanced features
 
-### Merchant JS: Look & Feel Customization
-If you would like to make advanced customizations to the look & feel of the search results you can do so with a custom css file. Please follow these guides to get a grasp of the Merchant JS selector structure
-* [Merchant JS Autocomplete layout](merchant-js-customization/autocomplete.scss)
-* [Extra animated preloader](merchant-js-customization/preloader.md)
-* [Resize images](merchant-js-customization/resizeImage.md)
+### [Merchant.JS API](merchant-js/README.md)
 
-### Merchant JS: API Integration
-If you would like to make modifications to the HTML templates or add any javascript components you can use our Merchant JS API:
-* [Merchant JS API integration](merchant-js-api/overview.md)
+[Merchant JS](merchant-js/README.md) is a JavaScript library that is included in your store and provides the intregration with all the functionality we expose, as well as all customizations that you can do through the Merchant Dashboard. 
 
-#### Merchant JS: API examples
-* [Add custom CSS](merchant-js-api/examples/addCustomCss.md)
-* [Add data from an external source](merchant-js-api/examples/addDataFromAnExternalSource.md)
-* [Add extra tracking](merchant-js-api/examples/addExtraTracking.md)
-* [Custom banner HTML](merchant-js-api/examples/customBannerHtml.md)
-* [Close search overlay](merchant-js-api/examples/closeSearchOverlay.md)
-* [Change product image on hover](merchant-js-api/examples/productImageOnHover.md)
-* [Add an 'add to cart' button to each product](merchant-js-api/examples/searchResultsProductAddToCart.md)
-* [Change the behaviour of the search results responsive layout](merchant-js-api/examples/searchResultsResponsiveLayout.md)
-* [Change the labels of the 'sort by' dropdown](merchant-js-api/examples/sortByLabels.md)
+[Merchant JS](merchant-js/README.md) exposes an API with the help of which you can perform different modifications both to the UI and to the content.
 
-#### Merchant JS: Use cases
-* [Clean search results layout](merchant-js-api/use-cases/cleanSearchResultsLayout.md)
-* [Custom look using store's JavaScript](merchant-js-api/use-cases/customLookUsingStoreJS.md)
-* [Custom stickers](merchant-js-api/use-cases/customStickers.md)
-
-### Recommendations
-If you want to integrat Findify Recommendations - visit your merchant dashboard!
-* [Recommendations](https://dashboard.findify.io/#/dashboard/recommendations)
-
-### Merchant JS: Bulding a custom navigation
-Follow this guide if you'd like to create a simple navigation that redirects users to particular search results.
-* [Merchant JS Custom navigation](merchant-js-core/manualNavigation.md)
+We have also created a bunch of [examples](merchant-js/examples/README.md) that can help using it.
 
 ### Search API
 You can use following advanced features by querying our API directly
