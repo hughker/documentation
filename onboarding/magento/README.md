@@ -1,4 +1,10 @@
 # Findify Magento Integration
 
-_We use a [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html) developed by CMinds, but if you don't want to use it, check our [Custom Integration](../custom/README.md) guide._
+The Magento integration consists of two parts:
+* Installing and setting up [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html)
+* Registering your account with [Findify](https://dashboard.findify.io/#/sign-in/register)
+
+You can do this steps separately or one by one, there is no particular order. 
+
+### Next step: Follow [integration steps](integration.md)
 
