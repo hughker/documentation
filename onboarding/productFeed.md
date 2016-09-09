@@ -1,8 +1,8 @@
 ## Introduction
 
-This document presents the product feed specification for the feeds to be sent to Findify.
+This document presents the product feed specification for the CSV feeds sent to Findify.
 
-The product feed must be sent in CSV format. In order for the product feed to be synchronized periodically with the search engine, the CSV file must be accessible via HTTP (or HTTPS). Findify is supporting files behind basic authentication.
+In order for Findify to synchronize periodically your products with our system, the CSV file must be publicly accessible. Findify is supporting feeds available via HTTP or HTTPS (behind a basic authentication).
 
 ## Mandatory fields
 

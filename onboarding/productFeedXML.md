@@ -1,8 +1,8 @@
 ## Introduction
 
-This document presents the product feed specification for the feeds to be sent to Findify.
+This document presents the product feed specification for the XML feeds sent to Findify.
 
-The product feed must be sent in XML format. In order for the product feed to be synchronized periodically with Findify, the XML file must be accessible via HTTP or HTTPS. We are supporting files behind a basic authentication.
+In order for Findify to synchronize periodically your products with our system, the XML file must be publicly accessible. Findify is supporting feeds available via HTTP or HTTPS (behind a basic authentication).
 
 ## Mandatory fields
 
