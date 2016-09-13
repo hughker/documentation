@@ -6,5 +6,5 @@ The Magento integration consists of two parts:
 
 You can complete these steps indipentantly, as there's no perticular order.
 
-### Next step: Follow [integration steps](integration.md)
+### Next step: Follow the Magento [integration steps](integration.md)
 
