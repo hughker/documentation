@@ -1,6 +1,7 @@
 # Findify Merchant JS API Examples 
 
-__Important note: using this feature requires knowledge in JavaScript (CSS and HTML are optional, but are good to have for UI customization). Please remebmer, that modifying your shop can lead to unexpected behaviour.__
+__Important note: using this feature requires knowledge in JavaScript (CSS and HTML are optional, but are good to have for UI customization). Please remebmer, that modifying your shop code can lead to unexpected behaviour. If you need any assistance in customization, we'll be happy to refer you to one of our [partners](http://findify.io/partners/?utm_source=github_documentation&utm_medium=github_documentation&utm_campaign=github_documentation
+).__
 
 You can find a list of different examples that can help you better understant how to work with Merchant JS API and the capabilities it provides.
 
