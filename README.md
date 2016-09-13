@@ -1,6 +1,6 @@
 # Findify Search, Recommendations and Smart Collections.
 
-Here you can find a the complete set of documentation of all our solutions. The documentations is structured based on the phase of the integration, and divided by platforms, for ease of navigation. If you have any questions, thoughts, comments or issues, please contact us at __yourfriends@findify.io__
+Here you can find the complete set of documentation of all our solutions. The documentations is structured based on the phase of the integration, and divided by platforms, for ease of navigation. If you have any questions, thoughts, comments or issues, please contact us at __yourfriends@findify.io__
 
 ## Getting started
 
