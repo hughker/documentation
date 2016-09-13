@@ -1,7 +1,9 @@
-## Introduction
-This document presents the product feed specification for the JSON feeds sent to Findify.
+# Findify JSON Feed format
 
-In order for Findify to synchronize periodically your products with our system, the JSON file must be publicly accessible. Findify is supporting feeds available via HTTP or HTTPS (behind a basic authentication).
+## Introduction
+This document presents the product feed specification for the __JSON__ feeds to be sent to Findify.
+
+In order for the product feed to be synchronized periodically with the search engine, the JSON file must be accessible via HTTP or HTTPS. Findify is supporting files behind basic authentication.
 
 ## Mandatory fields
 
