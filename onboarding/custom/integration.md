@@ -2,13 +2,12 @@
 
 To integrate Findify into your shop you'll need to follow steps listed below:
 
-* Create an account in our system
-* Provide more information about your shop
+* Select a plan and create a Findify account
 * Provide a valid product feed
 * Add the Findify tracking tags
-* Configure search page url
-* Put search enabling tags
-* Add the Findify Javascript to `<head>` section
+* Configure a search page url
+* Include the search enabling tags
+* Add the Findify Javascript to the `<head>` section
 
 __Important note__: If you have any problems or are stuck at any step, don't hesitate to contact us at yourfriends@findify.io.
 
@@ -16,22 +15,22 @@ __Important note__: If you have any problems or are stuck at any step, don't hes
 
 1. Go to our [Registration Page](https://dashboard.findify.io/#/sign-in/register)
 2. Select _Javascript - Other platforms_
-3. Enter you name, email and store url. The store url value should not contain _https://_ or _http://_ prefix, e.g. __www.mystore.com__ or __mystore.com__ are both valid
-4. You wil receive an email to validate your account. Click the confirmation link and proceed to next steps
+3. Enter you name, email and store url. The store url value should not contain _https://_ or _http://_ prefix, e.g. __www.example.com__ or __example.com__ are both valid
+4. You will receive an email to validate your account. Click the confirmation link and proceed to next steps
 
 ## Provide more information about your shop
 
-1. Select feed language
+1. Select the feed language
 
 __This is an important step as we analyze your feed using a specific analyzer for each language  and frontend will be translated accordingly. If you don't find the language you need, conctact us at youfriends@findify.io__
 2. Choose the timzone that your shop is in. This is mainly for analytics to be calculated correctly.
 3. Choose the currency of your store
 
-__We don't support multiple currencies for the same store at the moment, unless you can do the conversion in the frontend. If you need multiple currencies, you would need to do installation for each currency and provide the feed with that currency.__
+__Please note: we currently don't support multiple currencies on a single store, unless the conversion is done on the frontend. If you need multiple currencies, you would need to generate seperate feeds per currency.__
 
 ## Provide a valid product feed
 
-At the moment we support these formats for the product feed:
+We support these formats for the product feed:
 
 - [CSV](productFeedCSV.md)
 - [XML](productFeedXML.md)
