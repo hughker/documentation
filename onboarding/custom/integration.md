@@ -132,7 +132,7 @@ You can add the special attribute to any button and/or link on your page. Clicki
 <input data-findify-attr="findify-autocomplete-button"/>
 ```
 
-## Add the Findify Javascript to `<head>` section
+## Add the Findify Javascript to the `<head>` section
 
 Simply copy the code snippet below and paste it into page source right before the closing &lt;/head&gt; tag.
 
