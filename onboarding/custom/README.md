@@ -8,7 +8,7 @@ At the moment we support these formats for the product feed:
 
 - [CSV](productFeedCSV.md)
 - [XML](productFeedXML.md)
-- JSON (_please contact us at yourfriends@findify.io for details_)
+- [JSON](productFeedJSON.md)
 
 After you've generated your product feed, you can validate it by following the onboarding steps. If for some reason your feed cannot be validated, don't hesitate to contact us at yourfriends@findify.io.
 
