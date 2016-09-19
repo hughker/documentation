@@ -39,7 +39,7 @@ All of Findify's functionality is exposed via a JSON API. Some Beta functionalit
 
 ## 3rd party integrations
 We are always looking for solultions that by integrating into Findify's products, can enrich the shopping experience even further.
-Check which integrations are available, and how to enable them on our 3rd party integrations page.
+Check which integrations are available, and how to enable them on our [3rd party integrations page] (integrations/README.md).
 
 ## Contribute
 
