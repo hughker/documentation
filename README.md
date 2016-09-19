@@ -37,6 +37,10 @@ We have also created a few [examples](merchant-js/examples/README.md) that demos
 All of Findify's functionality is exposed via a JSON API. Some Beta functionality is only exposed via the API, and you're welcome to try them out:
 * [Demand messaging](search-api/features/demand-messaging.md)
 
+## 3rd party integrations
+We are always looking for solultions that by integrating into Findify's products, can enrich the shopping experience even further.
+Check which integrations are available, and how to enable them on our 3rd party integrations page.
+
 ## Contribute
 
 - Source Code for this documentation: [https://github.com/findify/documentation]()
