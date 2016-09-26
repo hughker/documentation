@@ -62,14 +62,17 @@ Add the following code to the ```<head>``` section of your website:
 ### Shopify
 To add a preloader replace your ```<div id="findify_results"></div>``` code block with the one below:
 
-```
+```html
 <div id="findify_results" style="min-height: 400px;">
   <div class="findify-component-spinner"></div>
 </div>
 ```
 
 ### BigCommerce
- ```<div data-findify-attr="findify-search-results" style="min-height: 400px;">
+You need to place ```<div class="findify-component-spinner"></div>``` inside the ```div``` that is marked with ```data-findify-attr="findify-search-results"``` and also apply ```style="min-height: 400px;"``` to it
+
+ ```html
+    <div data-findify-attr="findify-search-results" style="min-height: 400px;">
          <div class="findify-component-spinner"></div>
     </div>
 ```
