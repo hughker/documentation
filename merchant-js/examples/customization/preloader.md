@@ -5,56 +5,56 @@ Adding a preloader helps inform customers that the search results are loading, i
 Add the following code to the ```<head>``` section of your website:
 ```html
 <style>
-.findify-component-spinner {
-  margin: 60px auto 0 auto !important;
-  position: relative;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: findify-component-spinner-animation 0.7s infinite cubic-bezier(0.67, 0.35, 0.7, 0.8);
-  animation: findify-component-spinner-animation 0.7s infinite cubic-bezier(0.67, 0.35, 0.7, 0.8);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -ms-transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-  
-.findify-component-spinner:after {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px; 
-}
-
-@-webkit-keyframes findify-component-spinner-animation {
-  0% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); 
+  .findify-component-spinner {
+    margin: 60px auto 0 auto !important;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: findify-component-spinner-animation 0.7s infinite cubic-bezier(0.67, 0.35, 0.7, 0.8);
+    animation: findify-component-spinner-animation 0.7s infinite cubic-bezier(0.67, 0.35, 0.7, 0.8);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
-  100% {
-    -webkit-transform: rotate(450deg);
-    transform: rotate(450deg); 
-  }
-}
 
-@keyframes findify-component-spinner-animation {
-  0% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); 
+  .findify-component-spinner:after {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px; 
   }
-  100% {
-    -webkit-transform: rotate(450deg);
-    transform: rotate(450deg); 
-  } 
-}
 
-.findify-component-spinner {
-  border-top: 3px solid #eaeaea;
-  border-right: 3px solid #eaeaea;
-  border-bottom: 3px solid #eaeaea;
-  border-left: 3px solid #c6c6c6;}
-}
+  @-webkit-keyframes findify-component-spinner-animation {
+    0% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); 
+    }
+    100% {
+      -webkit-transform: rotate(450deg);
+      transform: rotate(450deg); 
+    }
+  }
+
+  @keyframes findify-component-spinner-animation {
+    0% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); 
+    }
+    100% {
+      -webkit-transform: rotate(450deg);
+      transform: rotate(450deg); 
+    } 
+  }
+
+  .findify-component-spinner {
+    border-top: 3px solid #eaeaea;
+    border-right: 3px solid #eaeaea;
+    border-bottom: 3px solid #eaeaea;
+    border-left: 3px solid #c6c6c6;}
+  }
 </style>
 ```
 ## Add the binding code based on your specific platform
@@ -72,7 +72,7 @@ To add a preloader replace your ```<div id="findify_results"></div>``` code bloc
 You need to place ```<div class="findify-component-spinner"></div>``` inside the ```div``` that is marked with ```data-findify-attr="findify-search-results"``` and also apply ```style="min-height: 400px;"``` to it
 
  ```html
-    <div data-findify-attr="findify-search-results" style="min-height: 400px;">
-         <div class="findify-component-spinner"></div>
-    </div>
+<div data-findify-attr="findify-search-results" style="min-height: 400px;">
+     <div class="findify-component-spinner"></div>
+</div>
 ```
