@@ -1,4 +1,4 @@
-#A dd a preloader before our merchantJS loads
+# Add a preloader before our merchantJS loads
 Adding a preloader helps inform customers that the search results are loading, in case they have a slow internet connection.
 
 ## Add the preloader styling
