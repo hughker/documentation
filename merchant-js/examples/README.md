@@ -5,6 +5,10 @@ __Important note:__ using this feature requires knowledge in JavaScript (CSS and
 
 You can find a list of different examples that can help you better understant how to work with Merchant JS API and the capabilities it provides.
 
+## Where to put API scripts? 
+
+All API scripts should be put before referencing our main JS script.
+
 #### Look & Feel Customization
 If you would like to make advanced customizations to the look & feel of the search results you can do so with a custom css file. Please follow these guides to get a grasp of the Merchant JS selector structure
 * [Merchant JS Autocomplete layout](customization/autocomplete.scss)
