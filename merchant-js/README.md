@@ -59,6 +59,10 @@ window.findifyApiRegistry = [function(api) {
 }];
 ```
 
+## Adding the script to your store
+
+You should include any API related scripts __before__ referencing our main JS script.
+
 
 ## Example
 
