@@ -20,7 +20,7 @@ function addCartToFindifyProduct(apiData){
             button = document.createElement('button');
 
             button.setAttribute('data-add-to-cart',apiData.data.id);
-            button.setAttribute('data-findify-type','search-product');
+            button.setAttribute('data-findify-type','add-to-cart-product');
             button.setAttribute('data-findify-id', apiData.data.id);
             //adding custom classes
             button.setAttribute('class', 'YOUR_CUSTOM_CLASSES');
@@ -64,7 +64,7 @@ function addCartToFindifyProduct(apiData){
             button = document.createElement('button');
 
             button.setAttribute('data-add-to-cart',apiData.data.id);
-            button.setAttribute('data-findify-type','search-product');
+            button.setAttribute('data-findify-type','add-to-cart-product');
             button.setAttribute('data-findify-id', apiData.data.id);
             //adding custom classes
             button.setAttribute('class', 'YOUR_CUSTOM_CLASSES');
@@ -108,7 +108,7 @@ function addCartToFindifyProduct(apiData){
             formNode.setAttribute("method", "POST");
             formNode.setAttribute("action", "/cart/add");
             formNode.setAttribute('data-add-to-cart', apiData.data.id);
-            formNode.setAttribute('data-findify-type','search-product');
+            formNode.setAttribute('data-findify-type','add-to-cart-product');
             formNode.setAttribute('data-findify-id', apiData.data.id);
             //ADD CUSTOM CLASSES TO THE FORM
             formNode.setAttribute('class', 'YOUR_CUSTOM_CLASSES');
