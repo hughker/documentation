@@ -1,17 +1,19 @@
 #What are smart collections?
 
 Smart collections are an inteligent way to present specific product segments to your users. 
-Imagine you'd like to create pages for products with specific brands or colours or tags. 
+The added value with Findify Smart Collections is that you will have all the features you love in Findify search, now on a collection level:
 
-Additionally smart collections learn from your user's behaviour. The order of the products is adjusted in time to increase their
-conversion - you don't have to do a thing!
+1. Dynamic filtering
+2. Trend based product ordering (using our Machine Learning platform)
+3. Lightning fast response time
 
-Our smart collections can replace any number of product pages in your store, they can be used as the only collection engine or even to create dedicated product landing pages.
+The Findify Smart Collections are SEO friendly, and are indexed by search engines to make sure you make the best of your product data. 
+Smart Collections can be used to replace specific cateogory pages on your site, create dedicated landing pages, or as the compelte collection engine for your store.
 
 #How can I create a smart collection
 
-To integrate smart collections - contact us through the merchant chat in your [Merchant Dashboard](http://dashboard.findify.io),
-afterwards you'll just need to add one div tag to anywhere you'd like to list your smart collections:
+To integrate smart collections you must be on our Enterprise plan. Please contact us to discuss an upgrade. 
+If you are already on the Enterprise plan, all you need to do is add one div tag to anywhere you'd like to include your smart collection[s]:
 
 ```html
 <div data-findify-attr="findify-search-results"></div>
@@ -36,6 +38,23 @@ All you need to do is to put the content before and/or after the smart collectio
 <div id="home-findify-rec-1"></div>
 ```
 
-###Shopify tip
-You should put the smart collections html div code into your collection.liquid template.
+#Shopify specific integration
+If you are a Shopify customer, you should put the smart collections html div code into your collection.liquid template.
 This way you can use liquid template variables to add easily extend the collection page's content.
+
+## replacing all your Shopify collections with Findify Smart Collections
+1. Once you've configured all your smart collections, modify the collection template to include the following snippet: https://github.com/findify/documentation/blob/master/merchant-js/examples/customization/preloader.md
+2. Once the snippet is added, enable Findify from your Dashboard (if this hasn't been done already)
+
+## replacing a subset of your Shopify collections with Findify Smart Collections
+1. 1. Once you've configured all your smart collections, modify the collection template to include the following snippet: https://github.com/findify/documentation/blob/master/merchant-js/examples/customization/preloader.md
+2. To do so, you’d need to create a condition in the template, based on the collection handle. The collection handle is the last part of the URL you provided in the smart collection configuration sheet. For example, for this collection URL: https://example.com/collections/collection-name the collection handle is "collection-name"
+3. This is the condition to create in the collection template:
+```
+{% if collection.handle == ‘my-collection-name’ %}
+// Place the Findify code block from step #1 here
+{% else %}
+// Place the default collection code here
+{% endif %}
+```
+These instructions are based on the Shopify collection handle documentation: https://help.shopify.com/themes/liquid/objects/collection#collection-handle
