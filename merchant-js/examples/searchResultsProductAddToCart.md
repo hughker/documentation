@@ -96,6 +96,7 @@ window.findifyApiRegistry = [
 
 ## Shopify integration
 
+```javascript
 function addCartToFindifyProduct(apiData){
     var node = apiData.node;
     var formNode, button;
@@ -159,3 +160,4 @@ window.findifyApiRegistry = [
         });
     }
 ];
+```
