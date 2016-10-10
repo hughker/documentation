@@ -38,6 +38,15 @@ All you need to do is to put the content before and/or after the smart collectio
 <div id="home-findify-rec-1"></div>
 ```
 
+#How can I add fallback for smart collections
+For the cases when findify servers are not responding, you can add fallback to display custom markup instead of findify smart collections.
+To implement this, you need to add a custom `div` to the page with following `id` and `style`:
+```html
+<div id="findify_results_fallback" style="display: none;">
+   <!-- Any custom markup, which will be displayed instead of findify smart collections -->
+</div>
+```
+
 #Shopify specific integration
 If you are a Shopify customer, you should put the smart collections html div code into your collection.liquid template.
 This way you can use liquid template variables to add easily extend the collection page's content.
