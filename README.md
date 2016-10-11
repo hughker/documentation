@@ -28,17 +28,17 @@ Check out the documentation of our Merchant.JS API, which allows you to make adv
 
 ### [Merchant.JS API](merchant-js/README.md)
 
-The [Merchant JS](merchant-js/README.md) is a JavaScript library that is included in your store and provides the intregration with all the functionality we expose, as well as all customizations that you can do through the Merchant Dashboard. 
+The [Merchant JS](merchant-js/README.md) is a JavaScript library that is included in your store and provides the integration with all the functionality we expose, as well as all customizations that you can do through the Merchant Dashboard. 
 The [Merchant JS](merchant-js/README.md) also exposes an API with the help of which you can perform different modifications both to the UI and to the content.
 
-We have also created a few [examples](merchant-js/examples/README.md) that demostrate how you can use the M.JS API.
+We have also created a few [examples](merchant-js/examples/README.md) that demonstrate how you can use the M.JS API.
 
 ### Search API
 All of Findify's functionality is exposed via a JSON API. Some Beta functionality is only exposed via the API, and you're welcome to try them out:
 * [Demand messaging](search-api/features/demand-messaging.md)
 
 ## 3rd party integrations
-We are always looking for solultions that by integrating into Findify's products, can enrich the shopping experience even further.
+We are always looking for solutions that by integrating into Findify's products, can enrich the shopping experience even further.
 Check which integrations are available, and how to enable them on our [3rd party integrations page] (integrations/README.md).
 
 ## Contribute
