@@ -12,7 +12,7 @@ All API scripts should be put before referencing our main JS script.
 #### Look & Feel Customization
 If you would like to make advanced customizations to the look & feel of the search results you can do so with a custom css file. Please follow these guides to get a grasp of the Merchant JS selector structure
 * [Merchant JS Autocomplete layout](customization/autocomplete.scss)
-* [Extra animated preloader](customization/preloader.md)
+* [Extra animated preloader](customization/preloader/README.md)
 * [Resize images](customization/resizeImage.md)
 
 #### API examples

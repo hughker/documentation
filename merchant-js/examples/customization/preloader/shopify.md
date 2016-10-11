@@ -1,8 +1,9 @@
-# Add a preloader before our merchantJS loads
-Adding a preloader helps inform customers that the search results are loading, in case they have a slow internet connection.
+# Shopify preloader integration
 
 ## Add the preloader styling
-Add the following code to the ```<head>``` section of your website:
+
+Add this code to `search-results.html` page
+
 ```html
 <style>
   .findify-component-spinner {
@@ -57,22 +58,13 @@ Add the following code to the ```<head>``` section of your website:
   }
 </style>
 ```
-## Add the binding code based on your specific platform
 
-### Shopify
-To add a preloader replace your ```<div id="findify_results"></div>``` code block with the one below:
+## Add the binding code
+
+Replace ```<div id="findify_results"></div>```  code block inside `search-results.html` file with the one below:
 
 ```html
 <div id="findify_results" style="min-height: 400px;">
   <div class="findify-component-spinner"></div>
-</div>
-```
-
-### BigCommerce
-You need to place ```<div class="findify-component-spinner"></div>``` inside the ```div``` that is marked with ```data-findify-attr="findify-search-results"``` and also apply ```style="min-height: 400px;"``` to it
-
- ```html
-<div data-findify-attr="findify-search-results" style="min-height: 400px;">
-     <div class="findify-component-spinner"></div>
 </div>
 ```
