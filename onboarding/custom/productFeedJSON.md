@@ -19,13 +19,14 @@ The following table presents the mandatory fields you will need to insert in the
 |product_url      |URL of the product page.|*http://www.example.com/asp/sp.asp?cat=12&id=1030*|
 |category          |Category of the product. Subcategories are split using the > delimiter. It's possible to include several groups of categories by separating them with the ### delimiter.|*Clothing & Accessories > Clothing > Dresses*|
 |thumbnail_url    |URL of the product thumbnail image. The thumbnail image must have a size of 65px * 65px.|*http://www.example.co.uk/image1_thumb.jpg*|
+|availability     |Availability status of the product (‘in stock” or “out of stock”).|*in stock*|
+|created_at       |Date when the product has been made available to the users (format ISO-8601).|*2014-04-22T06:00:00Z*|
 
 ## Optional fields
 
 |Name of the field|Description|Example
 |-----------------|-----------|------|
 |sku              |SKU of the product. Even if the "id" of the product is the SKU, you need to add a dedicated "sku" field.|*126373-AOP*|
-|availability     |Availability status of the product (‘in stock” or “out of stock”).|*in stock*|
 |brand            |Brand of the product.|*Calvin Klein*|
 |seller           |Seller of the product.|*Calvin Shop*|
 |sale_price       |Advertised sale price of the product.|*13.65*|
@@ -57,7 +58,8 @@ Here is an example where the custom fields gender and occasion have been added t
   "product_url": "http://www.example.com/my_product",
   "category": "Clothing > Shirt > For work",
   "thumbnail_url": "http://www.example.com/my_image_small.jpg",
-  "availability": true,
+  "availability": "in stock",
+  "created_at": "2014-04-22T06:00:00Z",
   "brand": "Calvin Klein",
   "material": "60% Cotton, 40% Polyester",
   "color": "white",

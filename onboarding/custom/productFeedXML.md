@@ -18,6 +18,8 @@ In order for Findify to synchronize periodically your products with our system, 
 |product_url      |URL of the product’s page.|*http://www.example.com/asp/sp.asp?cat=12&id=1030*|
 |category          |Category of the product. The different subcategories are split using the > delimiter.|*Clothing & Accessories > Clothing > Dresses*|
 |thumbnail_url    |URL of the thumbnail image of the product. The thumbnail image must have a size of 65px * 65px.|*http://www.example.co.uk/image1_thumb.jpg*|
+|availability     |Availability status of the product (‘in stock” or “out of stock”).|*in stock*|
+|created_at       |Date when the product has been made available to the users (format ISO-8601).|*2014-04-22T06:00:00Z*|
 
 
 ## Optional fields
@@ -25,7 +27,6 @@ In order for Findify to synchronize periodically your products with our system, 
 |Name of the field|Description|Example
 |-----------------|-----------|------|
 |sku              |SKU of the product. Even if the "id" of the product is the SKU, you need to add a dedicated "sku" field.|*126373-AOP*|
-|availability     |Availability status of the product (‘in stock” or “out of stock”).|*in stock*|
 |brand            |Brand of the product.|*Calvin Klein*|
 |seller           |Seller of the product.|*Calvin Shop*|
 |sale_price       |Advertised sale price of the product.|*13.65*|
@@ -71,6 +72,7 @@ The following example contains all the mandatory fields, some of the optional fi
 		<category><![CDATA[Clothing & Accessories > Clothing > Dresses]]></category>
 		<thumbnail_url><![CDATA[http://www.example.co.uk/image1_thumb.jpg]]></thumbnail_url>
 		<availability><![CDATA[in stock]]></availability>
+		<created_at><![CDATA[2014-04-22T06:00:00Z]]></created_at>
 		<brand><![CDATA[Calvin Klein]]></brand>
 		<color><![CDATA[Musta]]></color>
 		<size><![CDATA[M]]></size>
