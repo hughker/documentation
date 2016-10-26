@@ -74,7 +74,7 @@ function addCartToFindifyProduct(apiData){
 
             button.addEventListener('click', function(e) {                
                 e.preventDefault();
-                window.location.href = "cart.php?action=add&product_id=" + apiData.data.id;
+                window.location.href = "/cart.php?action=add&product_id=" + apiData.data.id;
             });
             if (node.children && node.children.length > 0){
                 node.children[0].appendChild(button);
