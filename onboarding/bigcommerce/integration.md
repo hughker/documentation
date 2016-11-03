@@ -49,6 +49,8 @@ _This is the trickiest part as it may very for different shops._
 You need to put the tag at the place where you want the search results to be displayed and you may need to create a new `<div>` wrapper around the default BigCommerce element that shows search results.
 
 1. Go to the __`search.html`__ page __([store_url]/admin/designmode.php?ToDo=editFile&File=search.html&f=a)__
+
+ _If you're using facted search from BigCommerce, please use this __`search_with_facets.html`__ page or this link __([store_url]/admin/designmode.php?ToDo=editFile&File=search_with_facets.html&f=a)__
 2. Paste __`data-findify-attr="findify-search-results"`__ inside the __`<div>`__ tag  that wraps __`%%Panel.SearchPage%%`__
 3. If there is no wrapper __`<div>`__, you should create it yourself and tag it with the tag above
 
