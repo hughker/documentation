@@ -1,12 +1,12 @@
 # Findify Magento Integration
 
-__Important note: you would need to install and set up [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html) to complete the integration__
+__Important note: you would need to install and set up [Magento Plugin](http://d3nhg2i1zayjpd.cloudfront.net/Magento_Findify-1.4.2.tgz) to complete the integration__
 
 To integrate Findify into your shop you'll need to follow the steps listed below:
 
 * Select a plan and follow all the steps needed to create a Findify account.
-* COnfigure your feed using [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html) and provide us with a valid, publicly available URL.
-* Paste the link to your unique Findify Merchant.JS in the [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html) admin
+* COnfigure your feed using [Magento Plugin](http://d3nhg2i1zayjpd.cloudfront.net/Magento_Findify-1.4.2.tgz) and provide us with a valid, publicly available URL.
+* Paste the link to your unique Findify Merchant.JS in the [Magento Plugin](http://d3nhg2i1zayjpd.cloudfront.net/Magento_Findify-1.4.2.tgz) admin
 
 ## Create an account in our system
 
@@ -27,12 +27,12 @@ __We don't support multiple currencies for the same store at the moment, unless 
 
 ## Provide a valid product feed
 
-The product feed generation is done by the [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html). 
+The product feed generation is done by the [Magento Plugin](http://d3nhg2i1zayjpd.cloudfront.net/Magento_Findify-1.4.2.tgz). 
 
 As soon as you install it and set it up you will have a link to the feed, which you will need to paste in the input for this step.
 
 ## Paste the link to your unique Merchant.JS
 
-In the last step of the onboarding you will be presented with a link to your unique Findify Merchant.JS file that you will need to include in the [Magento Plugin](https://www.magentocommerce.com/magento-connect/findify-search-autocomplete.html)
+In the last step of the onboarding you will be presented with a link to your unique Findify Merchant.JS file that you will need to include in the [Magento Plugin](http://d3nhg2i1zayjpd.cloudfront.net/Magento_Findify-1.4.2.tgz)
 
 __Findify should be live in your store now!__
