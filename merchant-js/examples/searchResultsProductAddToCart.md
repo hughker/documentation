@@ -13,7 +13,7 @@ function addCartToFindifyProduct(apiData){
     var node = apiData.node;
     var buttonNode, button;
 
-    if (node && (+apiData.data.quantity > 0)) {
+    if (node && apiData.data.availability) {
         buttonNode = node.querySelector('[data-add-to-cart="' + apiData.data.id + '"]');
 
         if (!buttonNode) {
@@ -57,7 +57,7 @@ function addCartToFindifyProduct(apiData){
     var node = apiData.node;
     var buttonNode, button;
 
-    if (node && (+apiData.data.quantity > 0)) {
+    if (node && apiData.data.availability) {
         buttonNode = node.querySelector('[data-add-to-cart="' + apiData.data.id + '"]');
 
         if (!buttonNode) {
@@ -101,7 +101,7 @@ function addCartToFindifyProduct(apiData){
     var node = apiData.node;
     var formNode, button;
 
-    if (node && (+apiData.data.quantity > 0)) {
+    if (node && apiData.data.availability) {
         formNode = node.querySelector('[data-add-to-cart="' + apiData.data.id + '"]');
 
         if (!formNode) {
