@@ -6,7 +6,10 @@ There are 2 ways to integrate Findify into your Shopify store:
 
 ## Public app integration
 
-### Next step: Follow [integration steps](integration.md)
+### Next step
+
+* [If you are using Stencil](stencil.md)
+* [If you are using Blueprint (odl themes)](integration.md)
 
 ## Private app integration
 
