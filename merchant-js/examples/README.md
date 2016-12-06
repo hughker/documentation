@@ -25,6 +25,7 @@ If you would like to make advanced customizations to the look & feel of the sear
 * [Add an 'add to cart' button to each product](searchResultsProductAddToCart.md)
 * [Change the behaviour of the search results responsive layout](searchResultsResponsiveLayout.md)
 * [Change the labels of the 'sort by' dropdown](sortByLabels.md)
+* [Hotjar integration](hotjar.md)
 
 #### Advanced API Examples
 * [Clean search results layout](use-cases/cleanSearchResultsLayout.md)
