@@ -1,3 +1,7 @@
+#Add hotjar tracking for Findify views
+
+This examples shows how you can record your user activity on Findify pages and components (search, recommendations, smart collections)
+
 ```javascript
 /*global findifyApiRegistry*/
 window.findifyApiRegistry = [function(api) {
