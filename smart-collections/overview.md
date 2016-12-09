@@ -112,7 +112,7 @@ Put this code in your `collection.liquid` template file (or another collection t
         border-left: 3px solid #c6c6c6;}
       }
   </style>
-  <div data-findify-attr="findify-search-results" style="min-height: 400px; display:none">
+  <div data-findify-attr="findify-search-results" style="min-height: 400px;">
     <div class="findify-component-spinner"></div>
   </div>
   <div id="findify_results_fallback" style="display: none;">
@@ -139,7 +139,7 @@ These instructions are based on the Shopify collection handle documentation: htt
 2. Replace the original category markup by the following code:
 
   ```html
-  <div data-findify-attr="findify-search-results" style="min-height: 400px; display:none">
+  <div data-findify-attr="findify-search-results" style="min-height: 400px;">
   </div>
   <div id="findify_results_fallback" style="display: none;">
       <!-- Original category code -->
