@@ -139,50 +139,63 @@ These instructions are based on the Shopify collection handle documentation: htt
 2. Replace the original category markup by the following code:
 
   ```html
+  <style>
+      .findify-component-spinner {
+        margin: 60px auto 0 auto !important;
+        position: relative;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation: findify-component-spinner-animation 0.7s infinite cubic-bezier(0.67, 0.35, 0.7, 0.8);
+        animation: findify-component-spinner-animation 0.7s infinite cubic-bezier(0.67, 0.35, 0.7, 0.8);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -ms-transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+      }
+
+      .findify-component-spinner:after {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px; 
+      }
+
+      @-webkit-keyframes findify-component-spinner-animation {
+        0% {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); 
+        }
+        100% {
+          -webkit-transform: rotate(450deg);
+          transform: rotate(450deg); 
+        }
+      }
+
+      @keyframes findify-component-spinner-animation {
+        0% {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); 
+        }
+        100% {
+          -webkit-transform: rotate(450deg);
+          transform: rotate(450deg); 
+        } 
+      }
+
+      .findify-component-spinner {
+        border-top: 3px solid #eaeaea;
+        border-right: 3px solid #eaeaea;
+        border-bottom: 3px solid #eaeaea;
+        border-left: 3px solid #c6c6c6;}
+      }
+  </style>
   <div data-findify-attr="findify-search-results" style="min-height: 400px;">
+    <div class="findify-component-spinner"></div>
   </div>
   <div id="findify_results_fallback" style="display: none;">
       <!-- Original category code -->
   </div>
   ```
 3. Put the initial category code inside of `#findify_results_fallback` div. In the situation where our servers are down, this div will be rendered instead.
-4. Go to `HTMLHead.html` edit page. Add the following code in the place before MerchantJS file is included (this file should be something like `.../search/prod/[your_site].min.js`:
-  ```html
-  <script>
-      window.findifyApiRegistry = [
-          function (api) {
-              function removeTrailingSlashIfNeeded(pathname) {
-                  return pathname.slice(-1) === '/' ? pathname.slice(0, -1) : pathname;
-              }
-
-              function getCollectionsNames(collections) {
-                  return collections.reduce(function (acc, collection) {
-                      return acc.concat(removeTrailingSlashIfNeeded(collection.slot));
-                  }, []);
-              }
-
-              api.on(api.events.gotConfiguration, function (apiData) {
-                  window.onload = function() {
-                      var names = getCollectionsNames(apiData.collection);
-                      var currentCollectionName = removeTrailingSlashIfNeeded(document.location.pathname);
-
-                      if (names.indexOf(currentCollectionName) !== -1) {
-                          var results = document.querySelector('[data-findify-attr="findify-search-results"]');
-                          results && (results.style.display = 'block');
-                      } else {
-                          var resultsFallback = document.querySelector('#findify_results_fallback');
-                          resultsFallback && (resultsFallback.style.display = 'block');
-                      }
-                  }
-              });
-          }
-      ];
-  </script>
-  ```
-5. If you want to show a preloader while Smart Collections are loading from server, you need to copy [this code](https://github.com/findify/documentation/blob/master/merchant-js/examples/customization/preloader/bigcommerce.md) from **Add the preloader styling** section and paste it after `<body>` tag.
-
-  After you've done that, you need to add this code inside the `data-findify-attr="findify-search-results"` div:
-
-  ```
-  <div class="findify-component-spinner"></div>
-  ```
