@@ -57,7 +57,8 @@ This way you can use liquid template variables to easily extend the collection p
 
 ## Replacing all your Shopify collections with Findify Smart Collections
 __Don't forget to include current collection code in the fallback div__
-Put this code in your `collection.liquid` template file (or another collection template file): 
+
+- Put this code in your `collection.liquid` template file (or another collection template file): 
 
   ```html
   <style>
@@ -119,24 +120,40 @@ Put this code in your `collection.liquid` template file (or another collection t
       <!-- Original category code -->
   </div>
   ```
+  
+- Place this MJS API script before referencing JS link in the `<head>` section:
+  
+  ```js
+  window.findifyApiRegistry = [function(api) {
+      function removeTrailingSlashIfNeeded(pathname) {
+          return pathname.slice(-1) === '/' ? pathname.slice(0, -1) : pathname;
+      }
 
-## Replacing a subset of your Shopify collections with Findify Smart Collections
-1. Configure the smart collection, using instructions above
-2. To do so, you’d need to create a condition in the template, based on the collection handle. The collection handle is the last part of the URL you provided in the smart collection configuration sheet. For example, for this collection URL: https://example.com/collections/collection-name the collection handle is "collection-name"
-3. This is the condition to create in the collection template:
+      function getCollectionsNames(collections) {
+          return collections.reduce(function (acc, collection) {
+              return acc.concat(removeTrailingSlashIfNeeded(collection.slot));
+          }, []);
+      }
+      api.on(api.events.gotConfiguration, function (apiData) {
+            window.onload = function() {
+                var names = getCollectionsNames(apiData.collection);
+                var currentCollectionName = removeTrailingSlashIfNeeded(document.location.pathname);
+                if (names.indexOf(currentCollectionName) !== -1) {
+                    var results = document.querySelector('[data-findify-attr="findify-search-results"]');
+                    results && (results.style.display = 'block');
+                } else {
+                    var resultsFallback = document.querySelector('#findify_results_fallback');
+                    resultsFallback && (resultsFallback.style.display = 'block');
+                }
+            }
+        });
+    }];
 ```
-{% if collection.handle == ‘my-collection-name’ %}
-// Place the Findify code block from step #1 here
-{% else %}
-// Place the default collection code here
-{% endif %}
-```
-These instructions are based on the Shopify collection handle documentation: https://help.shopify.com/themes/liquid/objects/collection#collection-handle
 
 # Bigcommerce specific integration
-1. Once you've configured all your Smart Collections, go `category.html` edit page:
+- Once you've configured all your Smart Collections, go `category.html` edit page:
   **[store_url]/admin/designmode.php?ToDo=editFile&File=category.html&f=a**
-2. Replace the original category markup by the following code:
+- Replace the original category markup by the following code:
 
   ```html
   <style>
@@ -198,4 +215,32 @@ These instructions are based on the Shopify collection handle documentation: htt
       <!-- Original category code -->
   </div>
   ```
-3. Put the initial category code inside of `#findify_results_fallback` div. In the situation where our servers are down, this div will be rendered instead.
+- Put the initial category code inside of `#findify_results_fallback` div. In the situation where our servers are down, this div will be rendered instead.
+- Place this MJS API script before referencing JS link in the `<head>` section:
+  
+  ```js
+  window.findifyApiRegistry = [function(api) {
+      function removeTrailingSlashIfNeeded(pathname) {
+          return pathname.slice(-1) === '/' ? pathname.slice(0, -1) : pathname;
+      }
+
+      function getCollectionsNames(collections) {
+          return collections.reduce(function (acc, collection) {
+              return acc.concat(removeTrailingSlashIfNeeded(collection.slot));
+          }, []);
+      }
+      api.on(api.events.gotConfiguration, function (apiData) {
+            window.onload = function() {
+                var names = getCollectionsNames(apiData.collection);
+                var currentCollectionName = removeTrailingSlashIfNeeded(document.location.pathname);
+                if (names.indexOf(currentCollectionName) !== -1) {
+                    var results = document.querySelector('[data-findify-attr="findify-search-results"]');
+                    results && (results.style.display = 'block');
+                } else {
+                    var resultsFallback = document.querySelector('#findify_results_fallback');
+                    resultsFallback && (resultsFallback.style.display = 'block');
+                }
+            }
+        });
+    }];
+```
