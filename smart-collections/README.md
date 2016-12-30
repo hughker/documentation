@@ -120,36 +120,6 @@ __Don't forget to include current collection code in the fallback div__
       <!-- Original category code -->
   </div>
   ```
-  
-- Place this MJS API script before referencing JS link in the `<head>` section:
-  
-  ```js
-  window.findifyApiRegistry = [function(api) {
-      function removeTrailingSlashIfNeeded(pathname) {
-          return pathname.slice(-1) === '/' ? pathname.slice(0, -1) : pathname;
-      }
-
-      function getCollectionsNames(collections) {
-          return collections.reduce(function (acc, collection) {
-              return acc.concat(removeTrailingSlashIfNeeded(collection.slot));
-          }, []);
-      }
-      api.on(api.events.gotConfiguration, function (apiData) {
-            window.onload = function() {
-                var names = getCollectionsNames(apiData.collection);
-                var currentCollectionName = removeTrailingSlashIfNeeded(document.location.pathname);
-                if (names.indexOf(currentCollectionName) !== -1) {
-                    var results = document.querySelector('[data-findify-attr="findify-search-results"]');
-                    results && (results.style.display = 'block');
-                } else {
-                    var resultsFallback = document.querySelector('#findify_results_fallback');
-                    resultsFallback && (resultsFallback.style.display = 'block');
-                }
-            }
-        });
-    }];
-```
-
 # Bigcommerce specific integration
 - Once you've configured all your Smart Collections, go `category.html` edit page:
   **[store_url]/admin/designmode.php?ToDo=editFile&File=category.html&f=a**
@@ -216,6 +186,8 @@ __Don't forget to include current collection code in the fallback div__
   </div>
   ```
 - Put the initial category code inside of `#findify_results_fallback` div. In the situation where our servers are down, this div will be rendered instead.
+
+# Replacing a subset your collections with Findify Smart Collections
 - Place this MJS API script before referencing JS link in the `<head>` section:
   
   ```js
