@@ -19,3 +19,10 @@ If you wish to add an information in the tag, you need to prefix this informatio
 - gender:another value
 
 After configuring the tags, you will need to contact the Findify team so they can configure the tag on their side as well.
+
+## Display a hierarchy of categories
+In order to have multiple levels of categories, you would need to:
+- Go to a product page in Shopify
+- In the "product_type" field, insert the symbol > between the different levels of your categories. For example: Home > Kitchen > Table
+
+The modifications will take effect at your next product synchronization time.
