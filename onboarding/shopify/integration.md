@@ -27,7 +27,7 @@ Reference this snippet in __`layout.liquid`__ file of the theme by placing the s
 Create a new page for displaying search results with __`search-results`__ handle and put the following content there
 
 ```html
-<style><!--
+<style>
 .findify-component-spinner {
   margin: 60px auto 0 auto !important;
   position: relative;
@@ -69,7 +69,7 @@ Create a new page for displaying search results with __`search-results`__ handle
       border-bottom: 3px solid #eaeaea;
       border-left: 3px solid #c6c6c6;}
    }
---></style>
+</style>
 <div id="findify_results" style="min-height: 400px;">
 <div class="findify-component-spinner"></div>
 </div>
