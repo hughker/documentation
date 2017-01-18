@@ -45,10 +45,10 @@ However, if you do not have any search page, please, follow these instructions:
 1. Login into your Magento admin panel
 2. Navigate to __CMS > Pages__
 3. Click on __Add a new page__ on the top right of the panel.
-3.1 Page Title = "search"
-3.2 URL Key = "search"
-3.3 Store view set to "All stores view"
-3.4 Status set to "enabled"
+  1. Page Title = "search"
+  2. URL Key = "search"
+  3. Store view set to "All stores view"
+  4. Status set to "enabled"
 4. Click on the section __Content__
   1. On the main box, add the following:`<div data-findify-attr="findify-search-results"></div>`
   2. In the section __Design__, set the __Layout__ to "1 column"
