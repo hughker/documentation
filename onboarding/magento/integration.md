@@ -76,7 +76,7 @@ Add to the following file: app/design/frontend/{your_package}/{your_theme}/layou
 </catalog_product_view>
 ```
 
-Add then the following file: app/design/frontend/{your_package}/{your_theme}/layout/findify/product_view.phtml
+Add then the following file: app/design/frontend/{your_package}/{your_theme}/template/findify/product_view.phtml
 ```php
 <?php $product = Mage::registry('current_product'); ?>
 <?php if($product && $product->getId()) : ?>
@@ -108,7 +108,7 @@ Add to the following file: app/design/frontend/{your_package}/{your_theme}/layou
 </checkout_onepage_success>
 ```
 
-Add then the following file: app/design/frontend/{your_package}/{your_theme}/layout/findify/checkout_success.phtml
+Add then the following file: app/design/frontend/{your_package}/{your_theme}/template/findify/checkout_success.phtml
 ```php
 <?php $orderId = Mage::getSingleton('checkout/session')->getLastOrderId(); ?>
 <?php if($orderId): ?>
