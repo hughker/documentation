@@ -19,6 +19,7 @@ To integrate Findify into your shop you'll need to follow the steps listed below
 1. Select feed language
 
 __This is an important step as we analyze your feed using a specific analyzer for each language  and frontend will be translated accordingly. If you don't find the language you need, contact us at youfriends@findify.io__
+
 2. Choose the timezone that your shop is in. This is mainly for analytics to be calculated correctly.
 3. Choose the currency of your store.
 
@@ -34,6 +35,7 @@ As soon as you install it and set it up you will have a link to the feed, which 
 
 You would need to add a new page called "search" where the search results will be displayed.
 If you already have an existing "search" page present, you need to:
+
 1. Login into your Magento admin panel
 2. Navigate to __CMS > Pages__
 3. Click on the __search__ page
@@ -45,6 +47,7 @@ If you already have an existing "search" page present, you need to:
 5. Click on __Save page__
 
 However, if you do not have any search page, please, follow these instructions:
+
 1. Login into your Magento admin panel
 2. Navigate to __CMS > Pages__
 3. Click on __Add a new page__ on the top right of the panel.
