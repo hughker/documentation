@@ -1,12 +1,11 @@
 # Findify Magento Integration
 
-__Important note: you would need to install and set up [Magento Plugin](https://github.com/findify/findify-magento/archive/master.zip) to complete the integration__
+__Important note: you would need to install and set up [Magento Plugin](https://github.com/findify/findify-magento) to complete the integration__
 
 To integrate Findify into your shop you'll need to follow the steps listed below:
 
 * Select a plan and follow all the steps needed to create a Findify account.
 * Configure your feed using the [Magento Plugin](https://github.com/findify/findify-magento/archive/master.zip) and provide us with a valid, publicly available URL. See the instructions on the [Github repository](https://github.com/findify/findify-magento) to install and configure the extension.
-
 
 ## Create an account in our system
 
@@ -27,7 +26,7 @@ __We don't support multiple currencies for the same store at the moment, unless 
 
 ## Provide a valid product feed
 
-The product feed generation is done by the [Magento Plugin](https://github.com/findify/findify-magento/archive/master.zip). 
+The product feed generation is done by the [Magento Plugin](https://github.com/findify/findify-magento). 
 
 As soon as you install it and set it up you will have a link to the feed, which you will need to paste in the input for this step.
 
@@ -172,8 +171,12 @@ You can add the special attribute to any button and/or link on your page. Clicki
 
 Simply copy the code snippet below and paste it into page source right before the closing &lt;/head&gt; tag.
 
+<<<<<<< HEAD
 ```html
 <script src=”{javascript_link_from_your_merchant_dashboard}”></script>
 ```
+=======
+In the last step of the onboarding you will be presented with a link to your unique Findify Merchant.JS file that you will need to include in the [Magento Plugin](https://github.com/findify/findify-magento)
+>>>>>>> 2030939072146fa03a4c993c892e4b06b449ebd2
 
 __Findify should be live in your store now!__
