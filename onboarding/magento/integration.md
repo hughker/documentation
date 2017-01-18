@@ -16,10 +16,7 @@ To integrate Findify into your shop you'll need to follow the steps listed below
 
 ## Provide more information about your shop
 
-1. Select feed language
-
-__This is an important step as we analyze your feed using a specific analyzer for each language  and frontend will be translated accordingly. If you don't find the language you need, contact us at youfriends@findify.io__
-
+1. Select feed language: This is an __important step__ as we analyze your feed using a specific analyzer for each language  and frontend will be translated accordingly. If you don't find the language you need, contact us at youfriends@findify.io
 2. Choose the timezone that your shop is in. This is mainly for analytics to be calculated correctly.
 3. Choose the currency of your store.
 
@@ -40,10 +37,7 @@ If you already have an existing "search" page present, you need to:
 2. Navigate to __CMS > Pages__
 3. Click on the __search__ page
 4. Click on the section __Content__
-4.1 On the main box, add the following:
-```html
-<div data-findify-attr="findify-search-results"></div>
-```
+  1. On the main box, add the following: `<div data-findify-attr="findify-search-results"></div>`
 5. Click on __Save page__
 
 However, if you do not have any search page, please, follow these instructions:
@@ -56,11 +50,8 @@ However, if you do not have any search page, please, follow these instructions:
 3.3 Store view set to "All stores view"
 3.4 Status set to "enabled"
 4. Click on the section __Content__
-4.1 On the main box, add the following:
-```html
-<div data-findify-attr="findify-search-results"></div>
-```
-4.2 In the section __Design__, set the __Layout__ to "1 column"
+  1. On the main box, add the following:`<div data-findify-attr="findify-search-results"></div>`
+  2. In the section __Design__, set the __Layout__ to "1 column"
 5. Click on __Save page__
 
 ## Add an HTML tag to your product page
@@ -174,12 +165,8 @@ You can add the special attribute to any button and/or link on your page. Clicki
 
 Simply copy the code snippet below and paste it into page source right before the closing &lt;/head&gt; tag.
 
-<<<<<<< HEAD
 ```html
 <script src=”{javascript_link_from_your_merchant_dashboard}”></script>
 ```
-=======
-In the last step of the onboarding you will be presented with a link to your unique Findify Merchant.JS file that you will need to include in the [Magento Plugin](https://github.com/findify/findify-magento)
->>>>>>> 2030939072146fa03a4c993c892e4b06b449ebd2
 
 __Findify should be live in your store now!__
