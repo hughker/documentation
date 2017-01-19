@@ -67,7 +67,7 @@ Create a new page for displaying search results with __`search-results`__ handle
       border-top: 3px solid #eaeaea;
       border-right: 3px solid #eaeaea;
       border-bottom: 3px solid #eaeaea;
-      border-left: 3px solid #c6c6c6;}
+      border-left: 3px solid #c6c6c6;
    }
 </style>
 <div id="findify_results" style="min-height: 400px;">
